@@ -47,7 +47,7 @@ def sentence_pair_features(sentence1, sentence2):
     #   'text_similarity_euclidean': text_similarity_features.euclidean(sentence1,sentence2),
     #   'text_similarity_cosine': text_similarity_features.cosine(sentence1,sentence2),
     #   'text_similarity_stat_pearsonr': text_similarity_features.stat_pearsonr(sentence1,sentence2),
-    #   'spicy_synonyms': spicy_features.synonyms(sentence1,sentence2),
+      'spicy_synonyms': spicy_features.synonyms(sentence1,sentence2),
 
       
       
@@ -62,8 +62,8 @@ with open("SICK_train.txt") as data:
     next(data) 
     for line in data:
         fields = line.rstrip('[\n\r]+').split("\t")
-        meta_sentence_1 = lemmatizer.lemmatize(fields[1])
-        meta_sentence_2 = lemmatizer.lemmatize(fields[2])
+        meta_sentence_1 = lemmatizer.spacy_lemmatize(fields[1])
+        meta_sentence_2 = lemmatizer.spacy_lemmatize(fields[2])
         entailment_type = fields[4]
         labeled_sentence_pairs.append((meta_sentence_1,meta_sentence_2,entailment_type))
 
@@ -83,8 +83,8 @@ with open("SICK_test_annotated.txt") as data:
     next(data) 
     for line in data:
         fields = line.rstrip('[\n\r]+').split("\t")
-        meta_sentence_1 = lemmatizer.lemmatize(fields[1])
-        meta_sentence_2 = lemmatizer.lemmatize(fields[2])
+        meta_sentence_1 = lemmatizer.spacy_lemmatize(fields[1])
+        meta_sentence_2 = lemmatizer.spacy_lemmatize(fields[2])
         entailment_type = fields[4]
         labeled_test_sentence_pairs.append((meta_sentence_1,meta_sentence_2,entailment_type))
 
