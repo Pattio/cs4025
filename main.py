@@ -51,8 +51,8 @@ train_set = [(sentence_pair_features(sentence1,sentence2), entailment_type) for 
 
 # classifier = nltk.NaiveBayesClassifier.train(train_set)
 # classifier = SklearnClassifier(SVC()).train(train_set)
-# classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 30)).train(train_set)
-classifier = nltk.classify.DecisionTreeClassifier.train(train_set)
+classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 30)).train(train_set)
+# classifier = nltk.classify.DecisionTreeClassifier.train(train_set)
 
 
 labeled_test_sentence_pairs = []
