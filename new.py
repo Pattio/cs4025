@@ -14,6 +14,8 @@ text_similarity_features = TextSimilarityFeatures()
 # Read the data
 #############################
 
+
+# print(lemmatizer.spacy_lemmatize("A group of kids is playing in a yard and an old man is standing in the background").data)
 '''
 with open("data/test.txt") as data:
     next(data) 
@@ -23,7 +25,7 @@ with open("data/test.txt") as data:
         meta_sentence_2 = lemmatizer.lemmatize(fields[2])
         print(spicy_features.synonyms(meta_sentence_1, meta_sentence_2))
 '''
-
+'''
 count = 0
 with open("data/test.txt") as data:
     next(data) 
@@ -55,3 +57,5 @@ with open("data/test.txt") as data:
     #        print(meta_sentence_1.strip_metadata(), meta_sentence_2.strip_metadata())
             print("--------------------------------:)")
     print(count)
+
+'''
