@@ -9,6 +9,7 @@ negation_features = NegationFeatures()
 #############################
 # Read the data
 #############################
+
 with open("data/test_new.txt") as data:
     next(data) 
     for line in data:
