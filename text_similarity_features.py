@@ -1,7 +1,7 @@
-import math
-import numpy
+import math, numpy
 
 class TextSimilarityFeatures:
+    
     
     def jaccard(self, sentence1, sentence2):
         normal_sentence1 = sentence1.strip_metadata()
@@ -40,8 +40,7 @@ class TextSimilarityFeatures:
         normal_sentence2 = sentence2.strip_metadata()
         vector1 = []
         vector2 = []
-        
-        word_set = set(normal_sentence1, normal_sentence2)
+        word_set = set(normal_sentence1 + normal_sentence2)
         for word in word_set:
             tf1 = normal_sentence1.count(word)/len(normal_sentence1)
             tf2 = normal_sentence2.count(word)/len(normal_sentence2)
@@ -70,6 +69,6 @@ class TextSimilarityFeatures:
         count = 0
         for i in range(len(x)):
             count += (x[i] - y[i])**2
-        return float(math.sqrt(count))
+        return math.sqrt(count)
         
     
