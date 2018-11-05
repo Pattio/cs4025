@@ -70,4 +70,15 @@ class TextSimilarityFeatures:
             count += (x[i] - y[i])**2
         return math.sqrt(count)
         
-    
+        
+    def sentence_originality(self, sentence1, sentence2):
+        normal_sentence1 = sentence1.original_sentence.split(" ")
+        normal_sentence2 = sentence2.original_sentence.split(" ")
+        if len(normal_sentence1) == len(normal_sentence2):
+            count = len(normal_sentence1)
+            for i in range(len(normal_sentence1)):
+                if normal_sentence1[i] == normal_sentence2[i]:
+                    count -= 1
+            return float(count)/len(normal_sentence1)
+        else:
+            return -1

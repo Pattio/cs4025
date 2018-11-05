@@ -1,8 +1,10 @@
 class MetaSentence:
     data = []
+    original_sentence = None
     
-    def __init__(self, sentence):
-	    self.data = sentence
+    def __init__(self, lematized_data, original_sentence):
+	    self.data = lematized_data
+	    self.original_sentence = original_sentence
 		
     def strip_metadata(self):
 	    if len(self.data) > 0:

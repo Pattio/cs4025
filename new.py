@@ -3,8 +3,10 @@ from lemmatizer import Lemamatizer
 from similarity_features import SimilarityFeatures
 from negation_features import NegationFeatures
 from spicy_features import SpicyFeatures
+from text_similarity_features import TextSimilarityFeatures
 
 lemmatizer = Lemamatizer()
+text_similarity_features = TextSimilarityFeatures()
 #similarity_features = SimilarityFeatures()
 #negation_features = NegationFeatures()
 #spicy_features = SpicyFeatures()
@@ -32,13 +34,19 @@ with open("data/test.txt") as data:
                 continue
             if 'no' in fields[1] or 'no' in fields[2] or 'No' in fields[1] or 'No' in fields[2]:
                 continue
+            if "isn't" in fields[1] or "isn't" in fields[2]:
+                continue
+            if "aren't" in fields[1] or "aren't" in fields[2]:
+                continue
             meta_sentence_1 = lemmatizer.lemmatize(fields[1])
             meta_sentence_2 = lemmatizer.lemmatize(fields[2])
-            print(fields[1], fields[2])
+            print(meta_sentence_1.original_sentence)
+            print(meta_sentence_2.original_sentence)
+            print(text_similarity_features.sentence_originality(meta_sentence_1, meta_sentence_2))
 #            print(meta_sentence_1.strip_metadata(), meta_sentence_2.strip_metadata())
             A = set(meta_sentence_1.strip_metadata())
             B = set(meta_sentence_2.strip_metadata())
-            print(A-B, B-A)
+#            print(A-B, B-A)
             count += 1
 #            print(fields[1])
  #           print(fields[2])

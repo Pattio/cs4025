@@ -25,7 +25,7 @@ class Lemamatizer:
             if self.remove_stop_words and lematized_word in self.stop_words:
                 continue
             lematized_sentence_with_metadata.append((lematized_word, self.replace_tag(tag)))
-        return MetaSentence(lematized_sentence_with_metadata)
+        return MetaSentence(lematized_sentence_with_metadata, sentence)
     
     # Simplify WordNet tags
     def replace_tag(self, tag):
