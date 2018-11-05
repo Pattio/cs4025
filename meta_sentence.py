@@ -13,3 +13,9 @@ class MetaSentence:
             if meta_tuple[0] == word:
                 return meta_tuple[1]
         return None
+        
+    def get_data(self, word):
+        for meta_tuple in self.data:
+            if meta_tuple[0] == word:
+                return meta_tuple
+        return None

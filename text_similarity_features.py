@@ -2,7 +2,6 @@ import math, numpy
 
 class TextSimilarityFeatures:
     
-    
     def jaccard(self, sentence1, sentence2):
         normal_sentence1 = sentence1.strip_metadata()
         normal_sentence2 = sentence2.strip_metadata()
