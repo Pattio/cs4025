@@ -12,11 +12,13 @@ from text_similarity_features import TextSimilarityFeatures
 from nltk.classify import SklearnClassifier
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
+from spicy_features import SpicyFeatures
 
 lemmatizer = Lemamatizer()
 similarity_features = SimilarityFeatures()
 text_similarity_features = TextSimilarityFeatures()
 negation_features = NegationFeatures()
+spicy_features = SpicyFeatures()
 
 def sentence_pair_features(sentence1, sentence2):
     return {
@@ -45,7 +47,7 @@ def sentence_pair_features(sentence1, sentence2):
     #   'text_similarity_euclidean': text_similarity_features.euclidean(sentence1,sentence2),
     #   'text_similarity_cosine': text_similarity_features.cosine(sentence1,sentence2),
     #   'text_similarity_stat_pearsonr': text_similarity_features.stat_pearsonr(sentence1,sentence2),
-      
+    #   'spicy_synonyms': spicy_features.synonyms(sentence1,sentence2),
 
       
       
@@ -89,28 +91,28 @@ with open("SICK_test_annotated.txt") as data:
 test_set = [(sentence_pair_features(sentence1,sentence2), entailment_type) for (sentence1, sentence2, entailment_type) in labeled_test_sentence_pairs]
 # print(test_set)
 
-# print(nltk.classify.accuracy(classifier, test_set))
+print(nltk.classify.accuracy(classifier, test_set))
 
 # print(classifier.show_most_informative_features(5))
 
-output = []
-for test_case in labeled_test_sentence_pairs:
-    # print('testcase ', test_case)
-    s1 = test_case[0]
-    s2 = test_case[1]
-    entailment_type = test_case[2] 
+# output = []
+# for test_case in labeled_test_sentence_pairs:
+#     # print('testcase ', test_case)
+#     s1 = test_case[0]
+#     s2 = test_case[1]
+#     entailment_type = test_case[2] 
 
-    result = classifier.classify(sentence_pair_features(s1,s2))
-    # print(' '.join(s1.strip_metadata()))
-    # print(' '.join(s2.strip_metadata()))
-    # print('result ', result)
+#     result = classifier.classify(sentence_pair_features(s1,s2))
+#     # print(' '.join(s1.strip_metadata()))
+#     # print(' '.join(s2.strip_metadata()))
+#     # print('result ', result)
 
-    if result != entailment_type:
-        output.append('\t | '.join([' '.join(s1.strip_metadata()),' '.join(s2.strip_metadata()), entailment_type, result]))
+#     if result != entailment_type:
+#         output.append('\t | '.join([' '.join(s1.strip_metadata()),' '.join(s2.strip_metadata()), entailment_type, result]))
 
-outputFile = open('unclassified.txt', 'w')
-outputFile.write('\n'.join(output))
-outputFile.close()
+# outputFile = open('missclassified.txt', 'w')
+# outputFile.write('\n'.join(output))
+# outputFile.close()
 
         
 
