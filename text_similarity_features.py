@@ -1,4 +1,7 @@
 import math, numpy
+from scipy.stats import pearsonr
+from scipy.stats import spearmanr
+from scipy.stats import kendalltau
 
 class TextSimilarityFeatures:
     
@@ -70,5 +73,17 @@ class TextSimilarityFeatures:
         for i in range(len(x)):
             count += (x[i] - y[i])**2
         return math.sqrt(count)
+
+    def stat_pearsonr(self, sentence1, sentence2):
+        x, y = self.tfidf(sentence1, sentence2)
+        return pearsonr(x, y)[0]
+
+    def stat_spearmanr(self, sentence1, sentence2):
+        x, y = self.tfidf(sentence1, sentence2)
+        return spearmanr(x, y)[0]
+
+    def stat_kendalltau(self, sentence1, sentence2):
+        x, y = self.tfidf(sentence1, sentence2)
+        return kendalltau(x, y)[0]
         
     

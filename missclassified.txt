@@ -1,0 +1,945 @@
+two dog wrestle hug	 | no dog wrestling hugging	 | CONTRADICTION	 | NEUTRAL
+person black jacket trick motorbike	 | person black motorbike trick jacket	 | NEUTRAL	 | ENTAILMENT
+player miss basket crowd background	 | player dunk basketball net crowd background	 | CONTRADICTION	 | NEUTRAL
+no man dunk ball basketball game	 | player dunk basketball net crowd background	 | CONTRADICTION	 | NEUTRAL
+two spectator kickboxing people watch	 | two people kickboxing spectator watch	 | NEUTRAL	 | ENTAILMENT
+child red shirt play leaf	 | child cover leaf play red shirt	 | NEUTRAL	 | ENTAILMENT
+two child lie snow draw angel	 | two child lie snow make snow angel	 | ENTAILMENT	 | NEUTRAL
+two people wear snowsuit ground making snow angel	 | two people snowsuit lie snow make snow angel	 | ENTAILMENT	 | NEUTRAL
+two people snowsuit lie snow make snow angel	 | nobody snowsuit lie snow make snow angel	 | CONTRADICTION	 | ENTAILMENT
+two child lie snow make snow angel	 | nobody snowsuit lie snow make snow angel	 | CONTRADICTION	 | NEUTRAL
+little girl look woman costume	 | little girl costume look like woman	 | NEUTRAL	 | ENTAILMENT
+four kid backbend park	 | four girl backbend play outdoors	 | ENTAILMENT	 | NEUTRAL
+two group people play football	 | two team compete football match	 | ENTAILMENT	 | NEUTRAL
+five child stand front wooden hut	 | five child stand front hut make wood	 | ENTAILMENT	 | NEUTRAL
+nobody practice water safety wear preserver	 | group people practice water safety wear preserver	 | CONTRADICTION	 | NEUTRAL
+deer jump fence	 | deer jump enclosure	 | ENTAILMENT	 | NEUTRAL
+deer jump fence	 | deer n't jump fence	 | CONTRADICTION	 | ENTAILMENT
+several people front building cover color	 | several people front colorful building	 | ENTAILMENT	 | NEUTRAL
+several people front building cover color	 | people walk outside building many mural	 | ENTAILMENT	 | NEUTRAL
+child hit baseball	 | child miss baseball	 | CONTRADICTION	 | NEUTRAL
+little boy watch family hit baseball	 | family watch little boy hit baseball	 | NEUTRAL	 | ENTAILMENT
+family watch boy hit baseball	 | child hit baseball	 | ENTAILMENT	 | NEUTRAL
+family watch little boy hit baseball	 | child hit baseball	 | ENTAILMENT	 | NEUTRAL
+large group asian people eat restaurant	 | group people large asian restaurant eat	 | NEUTRAL	 | ENTAILMENT
+various people eat red table crowded restaurant purple light	 | various customer eat crowded restaurant purple light	 | ENTAILMENT	 | NEUTRAL
+people eat red table restaurant without light	 | various people eat red table crowded restaurant purple light	 | NEUTRAL	 | ENTAILMENT
+rider black white bike stand seat	 | motorcycle rider stand seat white motorcycle	 | NEUTRAL	 | ENTAILMENT
+nobody motorcycle stand seat	 | motorcycle rider stand seat white motorcycle	 | CONTRADICTION	 | NEUTRAL
+someone black white motorcycle stand seat	 | no motorcycle rider stand seat motorcycle	 | CONTRADICTION	 | NEUTRAL
+man helmet paint red rid blue motorcycle road	 | motorcyclist rid motorbike along roadway	 | ENTAILMENT	 | NEUTRAL
+no motorcyclist rid motorbike along roadway	 | motorcyclist red helmet rid blue motorcycle road	 | CONTRADICTION	 | NEUTRAL
+motorcyclist red helmet rid blue motorcycle road	 | motorcyclist rid motorbike along roadway	 | ENTAILMENT	 | NEUTRAL
+no dog leap air	 | dog leap high air another watch	 | CONTRADICTION	 | NEUTRAL
+woman wear egyptian headdress	 | egyptian wear woman 's headdress	 | NEUTRAL	 | ENTAILMENT
+woman not wearing glass headdress	 | woman wear glass black headdress	 | CONTRADICTION	 | NEUTRAL
+black woman wear glass headdress	 | woman wear glass black headdress	 | NEUTRAL	 | ENTAILMENT
+woman wear egyptian headdress	 | woman black hat wear sunglass	 | NEUTRAL	 | ENTAILMENT
+woman wear indian headdress	 | woman wear glass black headdress	 | NEUTRAL	 | ENTAILMENT
+woman wear glass black headdress	 | woman wear egyptian headdress	 | NEUTRAL	 | ENTAILMENT
+cowboy rid horse corner barrel	 | cowgirl rid horse corner barrel	 | NEUTRAL	 | ENTAILMENT
+cowgirl rid barrel near horse corner	 | cowgirl rid horse corner barrel	 | NEUTRAL	 | ENTAILMENT
+boy stand outside water	 | boy stand water	 | NEUTRAL	 | ENTAILMENT
+person blonde flyaway hair play guitar	 | guitarist blonde flyaway hair	 | ENTAILMENT	 | NEUTRAL
+man point silver sedan	 | no man point car	 | CONTRADICTION	 | NEUTRAL
+man , woman two girl walk beach	 | group people near sea	 | ENTAILMENT	 | NEUTRAL
+asian woman crowd carry black bag	 | asian woman midst many people carry black bag	 | ENTAILMENT	 | NEUTRAL
+dog chase another hold stick mouth	 | dog chase stick hold another dog mouth	 | NEUTRAL	 | ENTAILMENT
+no dog run carry object mouth	 | dog chase another hold stick mouth	 | CONTRADICTION	 | NEUTRAL
+no dog chase another hold stick mouth	 | two dog run carry object mouth	 | NEUTRAL	 | ENTAILMENT
+soccer player kick ball goal	 | soccer player kick ball goal	 | NEUTRAL	 | ENTAILMENT
+black tan dog run low green grass	 | white tan dog run tall green grass	 | NEUTRAL	 | ENTAILMENT
+group explorer walk grass	 | people walk	 | ENTAILMENT	 | NEUTRAL
+two men hold bike stand side road cover snow	 | two men bike side snowy road	 | ENTAILMENT	 | NEUTRAL
+two men bike side snowy road	 | two men walk snowy road	 | NEUTRAL	 | ENTAILMENT
+two men hold water stand near fishing pole	 | two men stand near water hold fishing pole	 | NEUTRAL	 | ENTAILMENT
+two men stand near water hold fishing pole	 | two men hold fishing pole fishing tackle	 | NEUTRAL	 | ENTAILMENT
+two men stand near water hold fishing pole	 | two men hold fishing pole	 | ENTAILMENT	 | NEUTRAL
+blond girl rid wave	 | blond girl wave rid	 | NEUTRAL	 | ENTAILMENT
+lady surf rid wave	 | woman surf	 | ENTAILMENT	 | NEUTRAL
+two child hang large branch	 | two child climb tree	 | ENTAILMENT	 | NEUTRAL
+black man green rid bike	 | man dress black rid bike	 | NEUTRAL	 | ENTAILMENT
+man perform trick green bicycle	 | man perform trick bike	 | ENTAILMENT	 | NEUTRAL
+child hold squirt gun	 | no child hold water gun get spray water	 | CONTRADICTION	 | NEUTRAL
+no child hold squirt gun	 | laughing child hold water gun get spray water	 | CONTRADICTION	 | NEUTRAL
+laughing child hold water gun get spray water	 | child hold squirt gun	 | ENTAILMENT	 | NEUTRAL
+man n't sit comfortably table	 | man sit comfortably table	 | CONTRADICTION	 | ENTAILMENT
+man sit table comfortable discussion	 | man sit comfortably table	 | NEUTRAL	 | ENTAILMENT
+man sit comfortably table	 | no man wear shirt dyed black , sit table laughing	 | NEUTRAL	 | CONTRADICTION
+woman wear silver pant , pink bellbottoms pink scarf happily rid bike	 | woman wear silver pant , pink bellbottoms pink scarf rid bike	 | ENTAILMENT	 | NEUTRAL
+woman wear silver pant , pink bellbottoms pink scarf n't rid bike	 | woman wear silver pant , pink bellbottoms pink scarf rid bike	 | CONTRADICTION	 | NEUTRAL
+one man wear black helmet push bicycle	 | man push helmet towards another one black bicycle	 | NEUTRAL	 | ENTAILMENT
+woman sit look waterfall	 | somebody sit waterfall look woman	 | NEUTRAL	 | ENTAILMENT
+backyard light play trick dark brown black dog	 | dark black dog light brown dog play backyard	 | NEUTRAL	 | ENTAILMENT
+dog brown white coat trot shallow water	 | brown white coat float across shallow water near trotting dog	 | NEUTRAL	 | ENTAILMENT
+white man walk dog brown water difficulty	 | white brown dog walk water difficulty	 | NEUTRAL	 | ENTAILMENT
+group boy play ball front large door make wood	 | ball make wood play door front large group boy	 | NEUTRAL	 | ENTAILMENT
+child n't play front large door	 | child play front large door	 | CONTRADICTION	 | ENTAILMENT
+group boy play ball front large door make wood	 | child play front door , large	 | ENTAILMENT	 | NEUTRAL
+group boy play ball front large door make wood	 | child play front large door	 | ENTAILMENT	 | NEUTRAL
+teenage girl wear bead red	 | girl like red n't wear bead teenager	 | NEUTRAL	 | ENTAILMENT
+young lady light brown hair wear red necklace , sweatshirt earring smile	 | teenage girl wear bead red	 | ENTAILMENT	 | NEUTRAL
+boy climb wall artificially build climb attach rope	 | boy come wall artificially build climb n't attach rope	 | CONTRADICTION	 | ENTAILMENT
+boy climb wall artificially build climb attach rope	 | climber wall attach climb boy artificially build rope	 | NEUTRAL	 | ENTAILMENT
+fearful little boy climb wall	 | little boy , look fearful , climb wall .	 | ENTAILMENT	 | NEUTRAL
+one man descend cliff rope	 | one man climb cliff rope	 | NEUTRAL	 | ENTAILMENT
+person climb rock rope , pink	 | person pink climb gear rope rock	 | NEUTRAL	 | ENTAILMENT
+young climber make rock wall boy	 | young boy climb wall make rock	 | NEUTRAL	 | ENTAILMENT
+young child climb rock climb wall indoors	 | young child rock climb wall indoors	 | NEUTRAL	 | ENTAILMENT
+young boy climb wall make rock	 | young kid climb rock climb wall indoors	 | NEUTRAL	 | ENTAILMENT
+young child rock climb wall indoors	 | young boy climb wall make rock	 | NEUTRAL	 | ENTAILMENT
+young boy n't climb wall make rock	 | young child climb rock climb wall indoors	 | NEUTRAL	 | ENTAILMENT
+young child climb rock climb wall indoors	 | young boy climb wall make rock	 | NEUTRAL	 | ENTAILMENT
+one man bicycle trick midair	 | man fail perform bicycle trick midair	 | NEUTRAL	 | ENTAILMENT
+air trick performing cyclist	 | cyclist perform trick air	 | NEUTRAL	 | ENTAILMENT
+one man trick bicycle midair	 | cyclist perform trick air	 | ENTAILMENT	 | NEUTRAL
+man fail perform bicycle trick midair	 | cyclist perform trick air	 | CONTRADICTION	 | NEUTRAL
+one man bicycle trick midair	 | cyclist perform trick air	 | ENTAILMENT	 | NEUTRAL
+dog , black , white one ignore street	 | dog , black , white one star street	 | CONTRADICTION	 | NEUTRAL
+along two street , different breed dog look	 | two dog different breed look across street	 | NEUTRAL	 | ENTAILMENT
+man woman sit comfortably bench	 | two people sit comfortably bench	 | ENTAILMENT	 | NEUTRAL
+bride leave groom wedding	 | bride groom leave wedding	 | NEUTRAL	 | ENTAILMENT
+married couple walk aisle	 | couple get marry walk isle	 | ENTAILMENT	 | NEUTRAL
+married couple walk aisle	 | priest walk aisle marry couple	 | NEUTRAL	 | ENTAILMENT
+couple get marry walk isle	 | bride groom leave wedding	 | ENTAILMENT	 | NEUTRAL
+student fill classroom	 | classroom full student	 | ENTAILMENT	 | NEUTRAL
+classroom full student	 | classroom empty	 | CONTRADICTION	 | NEUTRAL
+presentation n't watch classroom student	 | presentation watch classroom student	 | CONTRADICTION	 | ENTAILMENT
+presentation n't watch classroom student	 | classroom full student	 | NEUTRAL	 | ENTAILMENT
+presentation watch classroom student	 | classroom full student	 | ENTAILMENT	 | NEUTRAL
+woman , old , near white dog	 | woman , old , white dog	 | NEUTRAL	 | ENTAILMENT
+dog excitedly play water field	 | dog excitedly play water grass	 | ENTAILMENT	 | NEUTRAL
+dog snap droplet water	 | snap depict water fall droplet dog	 | NEUTRAL	 | ENTAILMENT
+girl asia , front brick window , look surprised	 | girl asia , front window make brick , look surprise	 | ENTAILMENT	 | NEUTRAL
+girl asia , front brick window , n't look surprised	 | girl asia , front brick window , look surprised	 | CONTRADICTION	 | ENTAILMENT
+girl wear t-shirt mouth open .	 | girl t-shirt keep mouth open	 | ENTAILMENT	 | NEUTRAL
+football foot boy lie grass	 | football n't foot boy lie grass	 | CONTRADICTION	 | ENTAILMENT
+little kid play football fall grass	 | football player fall grass dodge little kid	 | NEUTRAL	 | ENTAILMENT
+black white dog joyfully run grass	 | dog , black coat , white dog run grass	 | ENTAILMENT	 | CONTRADICTION
+one white dog one black one run side side grass	 | no dog joyfully run grass	 | NEUTRAL	 | CONTRADICTION
+black white dog joyfully run grass	 | one white dog one black one run side side grass	 | NEUTRAL	 | CONTRADICTION
+lot people ice skating park	 | n't many people ice skate park	 | CONTRADICTION	 | ENTAILMENT
+many people skate ice park	 | ice skate rink place outdoors full people	 | ENTAILMENT	 | NEUTRAL
+bunch guy shore	 | bunch people shore	 | ENTAILMENT	 | NEUTRAL
+no one shore	 | bunch people shore	 | CONTRADICTION	 | NEUTRAL
+people beach full sand ocean enjoy day full sun	 | bunch people shore	 | ENTAILMENT	 | NEUTRAL
+people beach full sand ocean enjoy sunny day	 | no one shore	 | CONTRADICTION	 | NEUTRAL
+man blue jumpsuit fail perform wheelie motorcycle	 | man blue jumpsuit courageously perform wheelie motorcycle	 | CONTRADICTION	 | ENTAILMENT
+girl red shirt blow bubble	 | girl dyed red shirt n't blow bubble	 | CONTRADICTION	 | NEUTRAL
+bubble blew , dye girl 's shirt red .	 | girl red shirt blow bubble	 | NEUTRAL	 | ENTAILMENT
+girl , young , blow bubble huge	 | girl red shirt blow bubble	 | NEUTRAL	 | ENTAILMENT
+little boy jump puddle street	 | little boy get puddle street	 | NEUTRAL	 | ENTAILMENT
+two young kid eat corndogs	 | two young kid fast	 | CONTRADICTION	 | NEUTRAL
+two young kid play man eat corndogs	 | two young kid eat corndogs	 | NEUTRAL	 | ENTAILMENT
+two toddler eat really small wagon full corndogs	 | two young kid eat corndogs	 | NEUTRAL	 | ENTAILMENT
+man shirt dyed purple look man black shirt funny face	 | man pose amusedly watch another man	 | ENTAILMENT	 | NEUTRAL
+man shirt dyed purple look man black shirt face look funny	 | man pose watch another man	 | ENTAILMENT	 | NEUTRAL
+man shirt dyed purple look man black shirt funny face	 | man pose watch another man	 | ENTAILMENT	 | NEUTRAL
+man boy stand bottom stair , outdoors	 | man boy stand top stair , outdoors	 | CONTRADICTION	 | ENTAILMENT
+woman wear sunglass large size hold newspaper hand	 | newspaper feature woman large sized hand hold sunglass wear coat	 | NEUTRAL	 | ENTAILMENT
+old woman shirtless clumsily drop two newspaper	 | old woman wear rise pattern shirt clumsily carry two newspaper	 | CONTRADICTION	 | NEUTRAL
+snowboarder n't leap white snow	 | snowboarder leap white snow	 | CONTRADICTION	 | ENTAILMENT
+person practice snowboard fall air	 | snowboarder leap white snow	 | NEUTRAL	 | ENTAILMENT
+person n't rid motorbike sandy track	 | person rid motorbike sandy track	 | CONTRADICTION	 | ENTAILMENT
+young girl pink shirt peacefully lie grass	 | pink shirt white write wear girl lie grass	 | NEUTRAL	 | ENTAILMENT
+young girl pink shirt peacefully lie grass	 | girl wear pink shirt white write lie grass	 | NEUTRAL	 | ENTAILMENT
+dog , large gray , difficultly carry ball mouth run across grass	 | dog , large gray , carry ball mouth run across grass	 | ENTAILMENT	 | NEUTRAL
+man open package contain headphone	 | man open package n't contain headphone	 | CONTRADICTION	 | ENTAILMENT
+turtle follow fish	 | turtle n't follow fish	 | CONTRADICTION	 | ENTAILMENT
+turtle follow fish	 | fish follow turtle	 | CONTRADICTION	 | ENTAILMENT
+woman dip prawn batter	 | woman dip shrimp batter	 | ENTAILMENT	 | NEUTRAL
+woman remove ingredient bowl	 | woman add ingredient bowl	 | CONTRADICTION	 | ENTAILMENT
+woman crack egg bowl	 | woman crack egg outside bowl	 | NEUTRAL	 | ENTAILMENT
+man woman walk together wooded area	 | man woman walk together wood	 | ENTAILMENT	 | NEUTRAL
+man speak stage	 | man speak stage	 | NEUTRAL	 | ENTAILMENT
+small monkey walk water	 | monkey n't walk water	 | CONTRADICTION	 | ENTAILMENT
+monkey wad marsh	 | monkey n't walk water	 | CONTRADICTION	 | NEUTRAL
+woman dance sing rain	 | woman perform rain	 | ENTAILMENT	 | NEUTRAL
+woman dance sing rain	 | woman dance sing alone	 | NEUTRAL	 | ENTAILMENT
+band perform stage	 | band play stage	 | ENTAILMENT	 | NEUTRAL
+band perform onstage	 | band play onstage	 | ENTAILMENT	 | NEUTRAL
+band play onstage	 | no band play	 | CONTRADICTION	 | NEUTRAL
+band perform stage	 | no band play	 | CONTRADICTION	 | NEUTRAL
+band not perform stage	 | band play onstage	 | CONTRADICTION	 | ENTAILMENT
+man sit	 | man dance	 | CONTRADICTION	 | NEUTRAL
+man make music flute	 | man play flute	 | ENTAILMENT	 | NEUTRAL
+man play baseball flute	 | man play flute	 | NEUTRAL	 | ENTAILMENT
+man play soccer	 | man play game ball	 | ENTAILMENT	 | NEUTRAL
+man play soccer	 | soccer man play piano	 | NEUTRAL	 | ENTAILMENT
+boy spank man plastic sword	 | man spank boy plastic sword	 | NEUTRAL	 | ENTAILMENT
+no man hit	 | boy whack man sword	 | CONTRADICTION	 | NEUTRAL
+boy whack man sword	 | man whack boy sword	 | NEUTRAL	 | ENTAILMENT
+boy spank man plastic sword	 | man hit kid weapon	 | ENTAILMENT	 | NEUTRAL
+no man hit	 | boy spank man plastic sword	 | CONTRADICTION	 | NEUTRAL
+boy spank man plastic sword	 | boy whack man sword	 | ENTAILMENT	 | NEUTRAL
+lady n't measure ankle another woman	 | lady measure ankle another woman	 | CONTRADICTION	 | ENTAILMENT
+young lady measure ankle another woman	 | woman measure woman	 | ENTAILMENT	 | NEUTRAL
+lady measure ankle another woman	 | woman measure woman	 | ENTAILMENT	 | NEUTRAL
+man talk phone	 | man make phone call	 | ENTAILMENT	 | NEUTRAL
+man hang phone	 | man make call cell phone	 | CONTRADICTION	 | NEUTRAL
+animal roll side side garden	 | dog roll side side	 | NEUTRAL	 | ENTAILMENT
+cute puppy repeatedly roll side side back	 | dog roll side side	 | ENTAILMENT	 | NEUTRAL
+no dog roll side side	 | puppy repeatedly roll side side back	 | CONTRADICTION	 | NEUTRAL
+puppy repeatedly roll side side back	 | dog roll side side	 | ENTAILMENT	 | NEUTRAL
+machine shave end pencil	 | pencil sharpen	 | ENTAILMENT	 | NEUTRAL
+machine sharpen pencil	 | machine shave end pencil	 | ENTAILMENT	 | NEUTRAL
+person rinse steak water	 | man not rinse large steak	 | CONTRADICTION	 | NEUTRAL
+man cry	 | man scream	 | NEUTRAL	 | ENTAILMENT
+woman brush hand	 | woman brush foot	 | NEUTRAL	 | ENTAILMENT
+man exercise	 | man physical activity	 | ENTAILMENT	 | NEUTRAL
+three young men furiously run , jumping kicking near vending machine	 | three young men run , jumping kicking near vending machine	 | ENTAILMENT	 | NEUTRAL
+three boy karate uniform spar	 | three boy karate costume fight	 | ENTAILMENT	 | NEUTRAL
+woman cut broccoli	 | woman slice vegetable	 | ENTAILMENT	 | NEUTRAL
+musician play two keyboard	 | man play two keyboard	 | NEUTRAL	 | ENTAILMENT
+mime perform stage	 | men perform stage	 | NEUTRAL	 | ENTAILMENT
+man carry tree	 | man carry plant	 | ENTAILMENT	 | NEUTRAL
+tree pick man	 | man carry tree	 | ENTAILMENT	 | NEUTRAL
+man pick tree	 | man carry tree	 | ENTAILMENT	 | NEUTRAL
+man play guitar	 | man play guitar owner	 | NEUTRAL	 | ENTAILMENT
+badger n't burrow hole	 | badger burrow hole	 | CONTRADICTION	 | ENTAILMENT
+badger burrow hole	 | no badger shrewdly dig earth	 | CONTRADICTION	 | NEUTRAL
+chef carefully dry oil pan	 | chef carefully pour oil pan	 | CONTRADICTION	 | ENTAILMENT
+chef carefully pour oil pan	 | liquid pour pan man	 | ENTAILMENT	 | NEUTRAL
+man need stenograph operate	 | man operate stenograph	 | NEUTRAL	 | ENTAILMENT
+man type machine use stenography	 | man n't operate stenograph	 | CONTRADICTION	 | NEUTRAL
+man n't cautiously feed mouse snake	 | man cautiously feed mouse snake	 | CONTRADICTION	 | ENTAILMENT
+man n't cautiously feed mouse snake	 | snake feed mouse man	 | NEUTRAL	 | ENTAILMENT
+poor man feed snake mouse	 | man cautiously feed mouse snake	 | NEUTRAL	 | ENTAILMENT
+guy cheerfully play footbag	 | man n't play piano	 | ENTAILMENT	 | NEUTRAL
+car riskily jump girl	 | girl recklessly jump onto car	 | NEUTRAL	 | ENTAILMENT
+girl jumping car	 | one girl jump car	 | ENTAILMENT	 | NEUTRAL
+potato peel woman	 | woman throw potato peel	 | NEUTRAL	 | ENTAILMENT
+boat 's sail reflect peaceful water	 | boat sail peacefully water	 | ENTAILMENT	 | NEUTRAL
+man n't pour oil tomato .	 | man pour oil tomato	 | CONTRADICTION	 | ENTAILMENT
+man pour oil tomato	 | somebody pour tomato oil man	 | NEUTRAL	 | ENTAILMENT
+milk kitten 's drink	 | kitten drink fresh milk	 | NEUTRAL	 | ENTAILMENT
+milk kitten 's drink	 | milk drink cat	 | NEUTRAL	 | ENTAILMENT
+kitten drink fresh milk	 | cat drink milk	 | NEUTRAL	 | ENTAILMENT
+man empty container make plastic	 | man fill container make plastic	 | CONTRADICTION	 | NEUTRAL
+no man slice onion	 | onion cut man	 | CONTRADICTION	 | ENTAILMENT
+elephant ride woman	 | elephant n't ride woman	 | CONTRADICTION	 | ENTAILMENT
+elephant ride woman	 | elephant ride woman	 | NEUTRAL	 | ENTAILMENT
+someone feed animal	 | someone give food animal	 | ENTAILMENT	 | NEUTRAL
+someone give food animal	 | nobody feed animal	 | CONTRADICTION	 | NEUTRAL
+piano n't play anyone	 | piano play someone	 | CONTRADICTION	 | NEUTRAL
+man push button microwave	 | man push toward button microwave	 | NEUTRAL	 | ENTAILMENT
+one man turn microwave	 | one man power microwave	 | ENTAILMENT	 | NEUTRAL
+man push button microwave	 | one man turn microwave	 | NEUTRAL	 | ENTAILMENT
+flute play lovely way girl	 | one woman play flute	 | ENTAILMENT	 | NEUTRAL
+play happy boy play piano	 | boy happily play piano	 | NEUTRAL	 | ENTAILMENT
+piano play man	 | piano n't play man	 | CONTRADICTION	 | ENTAILMENT
+cheetah breathlessly chase prey across field	 | cheetah quickly run behind prey .	 | ENTAILMENT	 | NEUTRAL
+cheetah chase prey across field	 | cheetah quickly run behind prey .	 | ENTAILMENT	 | NEUTRAL
+no lion walk	 | lion slowly walk	 | CONTRADICTION	 | NEUTRAL
+lion pace tiredly pen	 | no lion walk	 | CONTRADICTION	 | NEUTRAL
+flute play man	 | flute n't play man	 | CONTRADICTION	 | ENTAILMENT
+girl cut butter two piece	 | girl melt two piece butter together	 | NEUTRAL	 | ENTAILMENT
+man n't smear butter bread	 | man spread butter piece bread big	 | CONTRADICTION	 | NEUTRAL
+parrot talk microphone	 | parrot silent front microphone	 | CONTRADICTION	 | NEUTRAL
+microphone front talk parrot mute	 | parrot speak	 | ENTAILMENT	 | NEUTRAL
+person sing play guitar	 | one man passionately play guitar	 | NEUTRAL	 | ENTAILMENT
+man passionately play guitar	 | no person sing play guitar	 | CONTRADICTION	 | NEUTRAL
+animal water	 | animal play water	 | NEUTRAL	 | ENTAILMENT
+two people play ping pong	 | ping pong player meet two people	 | NEUTRAL	 | ENTAILMENT
+window clean man	 | man window time clean	 | NEUTRAL	 | ENTAILMENT
+man drive car	 | man n't drive car	 | CONTRADICTION	 | ENTAILMENT
+chimp angrily kick target	 | chimp miss target	 | CONTRADICTION	 | NEUTRAL
+woman n't pour oil skillet	 | woman pour oil skillet	 | CONTRADICTION	 | ENTAILMENT
+kitten n't eagerly drink milk bowl	 | kitten eagerly drink milk bowl	 | CONTRADICTION	 | ENTAILMENT
+woman play guitar , acoustic , sing	 | woman n't play guitar , acoustic , sing	 | CONTRADICTION	 | ENTAILMENT
+person play guitar singing	 | woman n't play guitar , acoustic , sing	 | NEUTRAL	 | ENTAILMENT
+horse ride man	 | man rid animal	 | ENTAILMENT	 | NEUTRAL
+man ride horse	 | horse ride man	 | NEUTRAL	 | ENTAILMENT
+guitar sell lady	 | guitar play lady	 | NEUTRAL	 | ENTAILMENT
+person n't practice guitar	 | person practice guitar	 | CONTRADICTION	 | ENTAILMENT
+practice person n't like guitar	 | person practice guitar	 | NEUTRAL	 | ENTAILMENT
+guitar play girl	 | person practice guitar	 | ENTAILMENT	 | NEUTRAL
+lady cut meat	 | meat cut piece woman	 | ENTAILMENT	 | NEUTRAL
+boy teen n't talk girl webcam	 | boy teen talk girl webcam	 | CONTRADICTION	 | ENTAILMENT
+person strongly whisk egg bowl	 | strong person leave whisk bowl near egg	 | NEUTRAL	 | ENTAILMENT
+man eat carrot slice machine	 | man slice carrot machine	 | NEUTRAL	 | ENTAILMENT
+cat lick milk saucer	 | lick milk sauce give cat	 | NEUTRAL	 | ENTAILMENT
+potato peel fall woman	 | woman peel potato	 | NEUTRAL	 | ENTAILMENT
+picture man take near lake	 | man take picture lake	 | NEUTRAL	 | ENTAILMENT
+woman sew machine	 | woman use sewing machine	 | ENTAILMENT	 | NEUTRAL
+woman crack egg bowl	 | woman place bowl crack near egg	 | NEUTRAL	 | ENTAILMENT
+men play cricket	 | people not play cricket	 | CONTRADICTION	 | ENTAILMENT
+man slice garlic put away bread	 | man put garlic bread slice	 | NEUTRAL	 | ENTAILMENT
+two kid play swimming pool crocodile float green	 | two kid push inflatable crocodile pool	 | ENTAILMENT	 | NEUTRAL
+two kid push inflatable crocodile pool	 | two kid play swimming pool green color crocodile float	 | ENTAILMENT	 | NEUTRAL
+someone fall horse	 | someone horse	 | NEUTRAL	 | ENTAILMENT
+man abruptly knock horse	 | someone fall horse	 | ENTAILMENT	 | NEUTRAL
+woman not add sugar meat	 | woman add spice meat	 | NEUTRAL	 | CONTRADICTION
+woman add spice meat	 | woman add sugar meat	 | NEUTRAL	 | ENTAILMENT
+woman add sugar meat	 | no woman add spice meat	 | NEUTRAL	 | CONTRADICTION
+dog close food	 | dog bite	 | NEUTRAL	 | ENTAILMENT
+cat play watermelon	 | cat n't play watermelon	 | CONTRADICTION	 | ENTAILMENT
+teenager play guitar	 | boy play guitar	 | NEUTRAL	 | CONTRADICTION
+no boy play guitar	 | kid play guitar	 | NEUTRAL	 | CONTRADICTION
+woman wakeboarding lake	 | woman watch lake	 | NEUTRAL	 | ENTAILMENT
+man hammer nail camera	 | someone nail camera lens loud bang	 | NEUTRAL	 | ENTAILMENT
+person near onion cut	 | person cut onion	 | NEUTRAL	 | ENTAILMENT
+man pour plate cheese shred pot sauce	 | lady add cheese sauce	 | ENTAILMENT	 | NEUTRAL
+person burn camera blow torch	 | person set fire camera	 | ENTAILMENT	 | NEUTRAL
+man n't play acoustic guitar	 | man play acoustic guitar	 | CONTRADICTION	 | ENTAILMENT
+person piece together onion	 | person slice carrot piece	 | NEUTRAL	 | ENTAILMENT
+person carefully slice potato	 | man slice potato	 | NEUTRAL	 | ENTAILMENT
+man cook slice potato	 | man slice potato	 | NEUTRAL	 | ENTAILMENT
+somebody cut tomato	 | lady slice tomato	 | ENTAILMENT	 | NEUTRAL
+runner compete race	 | runner not take part race	 | CONTRADICTION	 | NEUTRAL
+runner race impetuously around track	 | runner compete race	 | ENTAILMENT	 | NEUTRAL
+runner race around track	 | runner compete race	 | ENTAILMENT	 | NEUTRAL
+man keyboard play nose	 | man play piano nose	 | NEUTRAL	 | ENTAILMENT
+baby rhino follow adult rhino	 | baby adult follow rhino	 | NEUTRAL	 | ENTAILMENT
+rhino , youngling , walk around pen mother	 | baby rhino walk around pen mother	 | ENTAILMENT	 | NEUTRAL
+baby rhino walk around pen mother	 | mother give baby pen walk rhino	 | NEUTRAL	 | ENTAILMENT
+baby rhino follow adult rhino	 | rhino , youngling , walk around pen mother	 | ENTAILMENT	 | NEUTRAL
+man rid motorcycle	 | man get motorcycle	 | NEUTRAL	 | CONTRADICTION
+no man rid motorcycle town	 | man rid motorcycle	 | NEUTRAL	 | CONTRADICTION
+man play trumpet	 | man put trumpet away	 | NEUTRAL	 | CONTRADICTION
+man speak	 | man silent	 | CONTRADICTION	 | NEUTRAL
+woman dance cage	 | lady dance	 | ENTAILMENT	 | NEUTRAL
+people rid paddle raft	 | nobody float raft	 | CONTRADICTION	 | NEUTRAL
+cat eagerly eating corn cob	 | cat eat corn	 | ENTAILMENT	 | NEUTRAL
+person quickly slice vegetable	 | someone slice tomato	 | NEUTRAL	 | ENTAILMENT
+someone slice tomato	 | person n't slice vegetable	 | NEUTRAL	 | ENTAILMENT
+little girl play grand piano stage	 | little girl play piano , big , stage	 | ENTAILMENT	 | CONTRADICTION
+little girl play piano , big , stage	 | little girl play piano	 | ENTAILMENT	 | CONTRADICTION
+man play guitar	 | someone strum guitar	 | ENTAILMENT	 | NEUTRAL
+no man play bamboo flute	 | man play flute	 | NEUTRAL	 | CONTRADICTION
+no person cut mushroom	 | person cut mushroom knife	 | CONTRADICTION	 | NEUTRAL
+tiger aimlessly walk around	 | tiger walk around cage	 | NEUTRAL	 | ENTAILMENT
+monkey brush dog	 | bull dog brush monkey	 | NEUTRAL	 | ENTAILMENT
+monkey brush bull dog	 | no monkey brush dog	 | CONTRADICTION	 | NEUTRAL
+two boy play video game	 | couple boy play video game	 | ENTAILMENT	 | NEUTRAL
+lady break egg mixer	 | lady crack egg mixer	 | ENTAILMENT	 | NEUTRAL
+ferret climb shelf	 | ferret climb shelf	 | NEUTRAL	 | ENTAILMENT
+several ferret climb cage	 | several ferret climb cage	 | NEUTRAL	 | ENTAILMENT
+man get car	 | man get car	 | NEUTRAL	 | ENTAILMENT
+man get car garage	 | man get garage car	 | NEUTRAL	 | ENTAILMENT
+man perform guitar	 | man play guitar	 | ENTAILMENT	 | NEUTRAL
+no man sing play guitar	 | man play guitar	 | NEUTRAL	 | CONTRADICTION
+man sing play guitar	 | man perform guitar	 | ENTAILMENT	 | NEUTRAL
+lady break raw egg bowl	 | lady n't break raw egg bowl	 | CONTRADICTION	 | ENTAILMENT
+woman crack egg bowl	 | lady n't break raw egg bowl	 | CONTRADICTION	 | NEUTRAL
+soccer player kick soccer ball goal	 | soccer player score goal	 | ENTAILMENT	 | NEUTRAL
+man woman eat happily	 | man woman eat	 | ENTAILMENT	 | NEUTRAL
+man woman talk	 | man woman not eat	 | NEUTRAL	 | CONTRADICTION
+person pour olive oil pot stove	 | person pour olive oil stove pot	 | NEUTRAL	 | ENTAILMENT
+woman walk dog street	 | woman restrain dog	 | NEUTRAL	 | ENTAILMENT
+guinea pig , small , gnaw eat piece carrot floor	 | guinea pig eat carrot	 | ENTAILMENT	 | NEUTRAL
+no small guinea pig gnawing eat piece carrot floor	 | guinea pig eat carrot	 | CONTRADICTION	 | NEUTRAL
+woman cook egg skillet	 | woman prepare egg skillet	 | ENTAILMENT	 | NEUTRAL
+lady pencil eyeshadow	 | girl use eye pencil eyelid	 | ENTAILMENT	 | NEUTRAL
+girl use pencil eye eyelid	 | woman pencil eyeshadow	 | ENTAILMENT	 | NEUTRAL
+girl use eye pencil eyelid	 | woman pencil eyeshadow	 | ENTAILMENT	 | NEUTRAL
+girl practice piano	 | girl play piano	 | ENTAILMENT	 | NEUTRAL
+girl , little , play grand piano stage	 | girl play piano	 | ENTAILMENT	 | NEUTRAL
+no woman cook egg	 | woman cook something	 | NEUTRAL	 | CONTRADICTION
+two cat playfully fight	 | cat play	 | ENTAILMENT	 | NEUTRAL
+two bike ride two people	 | two people rid motorcycle	 | NEUTRAL	 | ENTAILMENT
+woman play flute	 | woman put flute	 | NEUTRAL	 | CONTRADICTION
+woman put flute	 | woman play flute	 | NEUTRAL	 | CONTRADICTION
+man lift weight	 | man n't lift weight	 | CONTRADICTION	 | ENTAILMENT
+man n't lift weight	 | man lift barbell	 | CONTRADICTION	 | NEUTRAL
+girl apply makeup face	 | lady put makeup	 | ENTAILMENT	 | NEUTRAL
+herd deer cross street	 | herd caribous cross road	 | NEUTRAL	 | ENTAILMENT
+two men fight pasture cow	 | two men fight cattle pen	 | ENTAILMENT	 | NEUTRAL
+woman put cosmetic eyelid	 | woman apply cosmetic eyelid	 | ENTAILMENT	 | NEUTRAL
+woman put cosmetic eyelid	 | woman remove cosmetic eyelid	 | CONTRADICTION	 | NEUTRAL
+woman pencil eyeshadow	 | woman remove cosmetic eyelid	 | CONTRADICTION	 | ENTAILMENT
+large green ball hit potato	 | big potato knock green ball	 | NEUTRAL	 | ENTAILMENT
+different team play football field	 | two team play soccer	 | ENTAILMENT	 | NEUTRAL
+boy play keyboard	 | boy practice keyboard	 | ENTAILMENT	 | NEUTRAL
+man stag microphone sing	 | man stage sing microphone	 | NEUTRAL	 | ENTAILMENT
+man suit stand microphone singing	 | man stag microphone sing	 | ENTAILMENT	 | NEUTRAL
+child jump trampoline	 | child jump trampoline	 | NEUTRAL	 | ENTAILMENT
+nobody play trampoline	 | child jump trampoline	 | CONTRADICTION	 | NEUTRAL
+man jump onto low wall	 | man jump low wall	 | CONTRADICTION	 | ENTAILMENT
+man athletically jump wall	 | man jump onto low wall	 | NEUTRAL	 | ENTAILMENT
+woman drive car talk man seat beside	 | woman man not travel car	 | CONTRADICTION	 | ENTAILMENT
+nobody brush cat	 | person comb fur cat	 | CONTRADICTION	 | NEUTRAL
+man fast	 | man eat	 | CONTRADICTION	 | NEUTRAL
+no man eat food	 | man eat	 | CONTRADICTION	 | NEUTRAL
+woman carefully apply cosmetic eyelid	 | woman use eye pencil apply eye liner eyelid	 | NEUTRAL	 | ENTAILMENT
+monkey kick gloved hand person	 | monkey kick person 's glove	 | ENTAILMENT	 | NEUTRAL
+gloved person kick hand monkey	 | monkey kick gloved hand person	 | NEUTRAL	 | ENTAILMENT
+monkey train martial art	 | monkey practice martial art	 | ENTAILMENT	 | NEUTRAL
+man miss soccer ball	 | man kick soccer ball	 | NEUTRAL	 | ENTAILMENT
+man trick soccer ball	 | man kick soccer ball	 | NEUTRAL	 | ENTAILMENT
+man perform trick soccer ball	 | man kick soccer ball	 | ENTAILMENT	 | NEUTRAL
+man cut tape box	 | man tap cut box	 | NEUTRAL	 | ENTAILMENT
+man tap cut box	 | man cut box	 | NEUTRAL	 | ENTAILMENT
+kid practice instrument	 | kid play instrument	 | ENTAILMENT	 | NEUTRAL
+boy , young , play wind instrument	 | kid play instrument	 | ENTAILMENT	 | NEUTRAL
+young boy play wind instrument	 | kid play instrument	 | ENTAILMENT	 | NEUTRAL
+man trek wood	 | man sit wood	 | NEUTRAL	 | ENTAILMENT
+man sit wood	 | man hike wood	 | NEUTRAL	 | ENTAILMENT
+man trek wood	 | man hike wood	 | ENTAILMENT	 | NEUTRAL
+lady stir meat bowl	 | lady mix meat mixture bowl	 | ENTAILMENT	 | NEUTRAL
+lady mix meat mixture bowl	 | woman not stir meat bowl	 | CONTRADICTION	 | ENTAILMENT
+kitten play blue rope toy	 | little cat play toy	 | ENTAILMENT	 | NEUTRAL
+boy run away fishing line	 | boy run towards fishing line	 | CONTRADICTION	 | ENTAILMENT
+squirrel run circle	 | animal run circle	 | ENTAILMENT	 | NEUTRAL
+squirrel run circle	 | animal run circle	 | ENTAILMENT	 | NEUTRAL
+woman boil egg	 | woman dry egg	 | NEUTRAL	 | ENTAILMENT
+person kick ball soccer game somebody 's foot	 | person kick soccer ball foot	 | ENTAILMENT	 | NEUTRAL
+no person kick soccer ball somebody 's foot	 | person kick soccer ball foot	 | NEUTRAL	 | CONTRADICTION
+child run ocean wave	 | child star ocean wave	 | NEUTRAL	 | ENTAILMENT
+boy wave young runner ocean	 | young boy run ocean wave	 | NEUTRAL	 | ENTAILMENT
+man woman walk wood	 | man woman stroll	 | NEUTRAL	 | ENTAILMENT
+man woman walk wood	 | man woman walk	 | ENTAILMENT	 | NEUTRAL
+man woman walk wood	 | man woman walk	 | ENTAILMENT	 | NEUTRAL
+airplane fly air	 | airplane station ground	 | CONTRADICTION	 | NEUTRAL
+south african plane fly blue sky	 | airplane swiftly fly air	 | NEUTRAL	 | ENTAILMENT
+panda bear eat bamboo	 | one panda eat bamboo cane	 | ENTAILMENT	 | NEUTRAL
+man fold tortilla	 | man unfold tortilla	 | NEUTRAL	 | CONTRADICTION
+woman debone fish	 | woman free fish	 | CONTRADICTION	 | NEUTRAL
+man play violin	 | man harp play	 | NEUTRAL	 | ENTAILMENT
+one woman hand volleyball another woman	 | woman receive volleyball	 | ENTAILMENT	 | NEUTRAL
+man put away guitar	 | man play guitar	 | CONTRADICTION	 | NEUTRAL
+white cat perch small wooden cabinet look outside window	 | someone perch look small wooden cat white cabinet outside window	 | NEUTRAL	 | ENTAILMENT
+baby lick dog	 | dog lick baby	 | NEUTRAL	 | ENTAILMENT
+dog lick toddler	 | dog lick baby	 | NEUTRAL	 | ENTAILMENT
+woman not dice garlic	 | woman chop garlic	 | CONTRADICTION	 | ENTAILMENT
+person jot something pencil	 | person write pencil	 | ENTAILMENT	 | NEUTRAL
+person write pencil	 | writing person pencil	 | NEUTRAL	 | ENTAILMENT
+person jot something pencil	 | person write	 | ENTAILMENT	 | NEUTRAL
+no person write	 | person write pencil	 | CONTRADICTION	 | NEUTRAL
+someone boil okra pot	 | someone boil okra pot	 | NEUTRAL	 | ENTAILMENT
+squirrel spin around circle	 | animal run around circle	 | ENTAILMENT	 | NEUTRAL
+piece paper not cut	 | paper cut scissors	 | CONTRADICTION	 | NEUTRAL
+paper scissors cut	 | piece paper cut	 | NEUTRAL	 | ENTAILMENT
+man practice drum	 | man play drum	 | ENTAILMENT	 | NEUTRAL
+man floor exercise	 | man exercise floor	 | NEUTRAL	 | ENTAILMENT
+monkey rid bike	 | monkey rid bicycle	 | ENTAILMENT	 | NEUTRAL
+monkey rid bike	 | bike ride monkey	 | NEUTRAL	 | ENTAILMENT
+man rid bicycle	 | monkey rid bicycle	 | NEUTRAL	 | ENTAILMENT
+fish swim	 | fish not swim	 | NEUTRAL	 | CONTRADICTION
+pan drop meat	 | meat drop pan	 | NEUTRAL	 | ENTAILMENT
+woman clumsily put meat pan	 | meat drop pan	 | ENTAILMENT	 | NEUTRAL
+woman handle frog	 | person hold frog	 | ENTAILMENT	 | NEUTRAL
+runner race track	 | racer run track	 | ENTAILMENT	 | NEUTRAL
+men place suitcase trunk car	 | men pack suitcase trunk car	 | ENTAILMENT	 | NEUTRAL
+men put suitcase trunk car	 | men pack suitcase trunk car	 | ENTAILMENT	 | NEUTRAL
+woman put eyeshadow	 | woman remove make-up	 | CONTRADICTION	 | NEUTRAL
+toy train strike toy car	 | car train strike toy	 | NEUTRAL	 | ENTAILMENT
+person not slicing onion	 | person peel onion	 | NEUTRAL	 | CONTRADICTION
+several swimmer jump water	 | several swimmer jump water	 | NEUTRAL	 | ENTAILMENT
+no boy look calendar	 | boy study calendar	 | CONTRADICTION	 | NEUTRAL
+person scrub zucchini	 | person pack zucchini	 | NEUTRAL	 | ENTAILMENT
+woman scrub zucchini vegetable brush	 | woman eat zucchini vegetable scrub brush	 | NEUTRAL	 | ENTAILMENT
+man hat play harp	 | man play instrument	 | ENTAILMENT	 | NEUTRAL
+cat play piano	 | cat play keyboard	 | NEUTRAL	 | ENTAILMENT
+cat play piano	 | no cat playing keyboard	 | CONTRADICTION	 | NEUTRAL
+man wilderness walking path	 | man walk along path wilderness	 | NEUTRAL	 | ENTAILMENT
+man dance ceiling room	 | no man dance upside-down ceiling	 | CONTRADICTION	 | NEUTRAL
+man silent still	 | man sing play guitar	 | CONTRADICTION	 | NEUTRAL
+woman dance outside	 | people dance	 | ENTAILMENT	 | NEUTRAL
+no group people dance	 | woman dance outside	 | CONTRADICTION	 | NEUTRAL
+boy front dance people	 | boy dance front people	 | NEUTRAL	 | ENTAILMENT
+two men funny skit boxer front crowd people	 | funny crowd people skit two box men	 | NEUTRAL	 | ENTAILMENT
+biker rid away fence	 | biker rid along top fence	 | NEUTRAL	 | ENTAILMENT
+girl awaken	 | girl wake	 | ENTAILMENT	 | NEUTRAL
+child slowly wake	 | girl wake	 | NEUTRAL	 | ENTAILMENT
+no child wake	 | girl wake	 | CONTRADICTION	 | NEUTRAL
+man rope climb	 | man climb rope	 | NEUTRAL	 | ENTAILMENT
+man climb rope	 | man rope climb	 | NEUTRAL	 | ENTAILMENT
+woman put kangaroo	 | woman pick kangaroo	 | CONTRADICTION	 | NEUTRAL
+woman pick baby kangaroo	 | woman put kangaroo	 | NEUTRAL	 | ENTAILMENT
+man break tile hand	 | man repair tile hand	 | NEUTRAL	 | ENTAILMENT
+man break wooden board hand	 | man break board make wood hand	 | ENTAILMENT	 | CONTRADICTION
+man break wooden hand board	 | man break wooden board hand	 | NEUTRAL	 | ENTAILMENT
+man rid horse	 | horse rid man	 | NEUTRAL	 | ENTAILMENT
+horse rid man	 | man rid horse	 | NEUTRAL	 | ENTAILMENT
+man draw picture	 | person paint	 | NEUTRAL	 | ENTAILMENT
+person not draw	 | man draw picture	 | CONTRADICTION	 | ENTAILMENT
+someone draw person	 | man draw picture	 | NEUTRAL	 | ENTAILMENT
+woman cut onion	 | woman not cut meat	 | ENTAILMENT	 | NEUTRAL
+man erase man 's work board	 | girl erase man 's work board	 | NEUTRAL	 | ENTAILMENT
+man erase man 's work board	 | man erase draw board	 | NEUTRAL	 | ENTAILMENT
+no woman slice eggplant	 | woman cut vegetable	 | NEUTRAL	 | CONTRADICTION
+man cut slice bread	 | person slice piece bread	 | ENTAILMENT	 | NEUTRAL
+nobody slice piece bread	 | man slice bread	 | CONTRADICTION	 | NEUTRAL
+person slice piece bread	 | no man slice bread	 | NEUTRAL	 | CONTRADICTION
+animal big eye sleep	 | animal big eye eat	 | CONTRADICTION	 | NEUTRAL
+lemur eat quickly	 | animal big eye eat	 | ENTAILMENT	 | NEUTRAL
+two men play guitar	 | two girl play guitar	 | NEUTRAL	 | ENTAILMENT
+no clown singing people not dance	 | clown sing people dance	 | CONTRADICTION	 | NEUTRAL
+people sing clown dance	 | clown sing people dance	 | NEUTRAL	 | ENTAILMENT
+person not quickly chop mushroom knife	 | man rapidly chop mushroom knife	 | NEUTRAL	 | ENTAILMENT
+plane take	 | no airplane take	 | CONTRADICTION	 | ENTAILMENT
+man paint	 | man draw	 | ENTAILMENT	 | NEUTRAL
+man draw	 | girl draw man	 | NEUTRAL	 | ENTAILMENT
+woman pick	 | woman take	 | ENTAILMENT	 | NEUTRAL
+man cut paper	 | man cut piece paper	 | NEUTRAL	 | ENTAILMENT
+man rid horse desert	 | man rid horse sandy land	 | ENTAILMENT	 | NEUTRAL
+two people race flip tire tractor	 | two men race tire roll competition	 | ENTAILMENT	 | NEUTRAL
+person remove chopped vegetable pot stove	 | person drop chopped vegetable pot stove	 | CONTRADICTION	 | NEUTRAL
+men conversation	 | men talk	 | ENTAILMENT	 | NEUTRAL
+woman talk	 | woman not talk	 | NEUTRAL	 | CONTRADICTION
+no rhino graze field	 | rhino graze grass	 | CONTRADICTION	 | NEUTRAL
+rhino graze field	 | rhino graze grass	 | ENTAILMENT	 | NEUTRAL
+boy play piano	 | boy play musical instrument	 | ENTAILMENT	 | NEUTRAL
+girl comb hair	 | girl style hair	 | ENTAILMENT	 | NEUTRAL
+no girl brush hair	 | girl style hair	 | NEUTRAL	 | CONTRADICTION
+girl style hair	 | girl brush hair	 | NEUTRAL	 | ENTAILMENT
+cat slide upside couch	 | cat not crawl piece furniture	 | CONTRADICTION	 | NEUTRAL
+man empty plastic container	 | man fill plastic container	 | CONTRADICTION	 | NEUTRAL
+group men fight	 | two men fight	 | ENTAILMENT	 | NEUTRAL
+woman rid horse	 | animal ride woman	 | ENTAILMENT	 | NEUTRAL
+hamster sing	 | small animal sing	 | ENTAILMENT	 | NEUTRAL
+man sing play guitar	 | man perform guitar	 | ENTAILMENT	 | NEUTRAL
+man perform guitar	 | man play guitar	 | ENTAILMENT	 | NEUTRAL
+no man sing play guitar	 | man play guitar	 | NEUTRAL	 | CONTRADICTION
+boy cut grass curb scissors	 | boy shorten grass curb scissors	 | ENTAILMENT	 | NEUTRAL
+boy not cut grass curb scissors	 | boy cut grass scissors	 | NEUTRAL	 | CONTRADICTION
+man cut big rope sword	 | man cut thick rope sword	 | NEUTRAL	 | ENTAILMENT
+man carve hole piece wood	 | man drill hole piece wood	 | NEUTRAL	 | ENTAILMENT
+man drill hole piece wood	 | man drill hole piece wood	 | NEUTRAL	 | ENTAILMENT
+man show small monkey	 | man exhibit small monkey	 | ENTAILMENT	 | NEUTRAL
+group men play soccer beach	 | group boy not play soccer beach	 | NEUTRAL	 | CONTRADICTION
+man cut piece butter mixing bowl	 | man add piece butter mixing bowl	 | ENTAILMENT	 | NEUTRAL
+person kick monkey	 | monkey kick person	 | NEUTRAL	 | ENTAILMENT
+man fix silencer gun	 | man fit silencer weapon	 | ENTAILMENT	 | NEUTRAL
+no man fit silencer pistol	 | man fix silencer gun	 | CONTRADICTION	 | NEUTRAL
+man fit silencer pistol	 | man fix silencer gun	 | ENTAILMENT	 | NEUTRAL
+man motorcycle rid one wheel	 | man motorcycle trick	 | ENTAILMENT	 | NEUTRAL
+man motorcycle rid one wheel	 | person perform trick motorcycle	 | ENTAILMENT	 | NEUTRAL
+girl sit couch crochet	 | girl sit sofa crocheting	 | ENTAILMENT	 | NEUTRAL
+dog tease monkey zoo	 | monkey tease dog zoo	 | NEUTRAL	 | ENTAILMENT
+man pull-up	 | man exercise	 | ENTAILMENT	 | NEUTRAL
+man exercise	 | no man pull-up	 | NEUTRAL	 | CONTRADICTION
+man pull-up	 | man exercise	 | ENTAILMENT	 | NEUTRAL
+man car pull beside woman walk along street	 | man car pull beside woman along road	 | ENTAILMENT	 | NEUTRAL
+woman fall horse	 | woman rid horse	 | NEUTRAL	 | CONTRADICTION
+woman paint man 's face	 | man paint woman 's face	 | NEUTRAL	 | ENTAILMENT
+man talk phone	 | man n't talk telephone	 | CONTRADICTION	 | ENTAILMENT
+man talk telephone	 | man talk phone	 | NEUTRAL	 | ENTAILMENT
+no man slice potato	 | man cut potato	 | CONTRADICTION	 | ENTAILMENT
+man fish river	 | man fish stream	 | NEUTRAL	 | ENTAILMENT
+chef cook meal	 | chef prepare food	 | ENTAILMENT	 | NEUTRAL
+man rid water toy water	 | man play water toy water	 | ENTAILMENT	 | NEUTRAL
+man put season pizza	 | man put cheese pizza	 | NEUTRAL	 | ENTAILMENT
+man card trick	 | man magic trick	 | NEUTRAL	 | ENTAILMENT
+woman put baby waste bin	 | woman put child waste bin	 | ENTAILMENT	 | NEUTRAL
+woman poke potato	 | woman not poke hole potato	 | CONTRADICTION	 | NEUTRAL
+man pour cleaner sink	 | man clean sink	 | ENTAILMENT	 | NEUTRAL
+woman fry food	 | no woman deep fry food	 | CONTRADICTION	 | NEUTRAL
+woman deep frying food	 | woman fry food	 | ENTAILMENT	 | NEUTRAL
+baby talk	 | child talk	 | ENTAILMENT	 | NEUTRAL
+dog look store counter	 | dog look piece furniture shop	 | NEUTRAL	 | ENTAILMENT
+tiger cub roar	 | tiger cub make sound	 | ENTAILMENT	 | NEUTRAL
+woman place food pot hot water	 | woman place food pot cold water	 | CONTRADICTION	 | NEUTRAL
+man rid horse	 | person rid animal	 | ENTAILMENT	 | NEUTRAL
+someone fold piece paper	 | person not fold piece paper	 | CONTRADICTION	 | ENTAILMENT
+bunny play stuffed bunny	 | rabbit play toy	 | ENTAILMENT	 | NEUTRAL
+no rabbit play toy rabbit	 | bunny play stuffed bunny	 | CONTRADICTION	 | NEUTRAL
+rabbit play toy rabbit	 | no bunny playing stuffed bunny	 | CONTRADICTION	 | NEUTRAL
+bunny play stuffed bunny	 | rabbit play toy rabbit	 | ENTAILMENT	 | NEUTRAL
+someone play piano	 | person play keyboard	 | ENTAILMENT	 | NEUTRAL
+man jump pool	 | man dive pool	 | NEUTRAL	 | ENTAILMENT
+man dive pool	 | man dive water	 | ENTAILMENT	 | NEUTRAL
+man dive pool	 | man jump pool	 | NEUTRAL	 | ENTAILMENT
+man rid motorbike	 | man rid scooter	 | NEUTRAL	 | ENTAILMENT
+man put chicken box	 | man put food box	 | ENTAILMENT	 | NEUTRAL
+man put chicken container	 | man put food container	 | ENTAILMENT	 | NEUTRAL
+woman take egg bowl	 | woman crack egg bowl	 | NEUTRAL	 | CONTRADICTION
+little boy sing play guitar	 | little kid sing play guitar	 | ENTAILMENT	 | NEUTRAL
+little kid sing play guitar	 | baby play guitar	 | ENTAILMENT	 | NEUTRAL
+someone check email	 | someone read email	 | ENTAILMENT	 | NEUTRAL
+someone not read email	 | man read email	 | CONTRADICTION	 | NEUTRAL
+lady crack egg bowl	 | lady take egg bowl	 | NEUTRAL	 | CONTRADICTION
+man crack egg bowl	 | lady crack egg bowl	 | NEUTRAL	 | ENTAILMENT
+man work laptop	 | man work computer	 | ENTAILMENT	 | NEUTRAL
+woman use sledgehammer break concrete block another man	 | man use sledgehammer break concrete block another man	 | NEUTRAL	 | ENTAILMENT
+man use sledgehammer break concrete block another person	 | man break slab concrete sledge hammer	 | ENTAILMENT	 | NEUTRAL
+man use sledgehammer break concrete block another man	 | man break block concrete sledge hammer	 | ENTAILMENT	 | NEUTRAL
+no man break slab concrete sledge hammer	 | man use sledgehammer break concrete block another man	 | CONTRADICTION	 | NEUTRAL
+man use sledgehammer break concrete block another man	 | man break slab concrete sledge hammer	 | ENTAILMENT	 | NEUTRAL
+cupcake eat girl	 | woman eat cupcake	 | NEUTRAL	 | ENTAILMENT
+girl eat cupcake	 | woman eat cupcake	 | NEUTRAL	 | ENTAILMENT
+man play keyboard	 | man play instrument	 | ENTAILMENT	 | NEUTRAL
+no man cut boot sword	 | man sever toe empty leather boot sword	 | CONTRADICTION	 | NEUTRAL
+man wipe edge bowl	 | man clean edge bowl	 | ENTAILMENT	 | NEUTRAL
+someone stir chili kettle	 | someone stir pot chili spoon	 | NEUTRAL	 | ENTAILMENT
+small dog lie bed	 | small dog lie bed	 | NEUTRAL	 | ENTAILMENT
+small dog lie bed	 | small dog lie bed	 | NEUTRAL	 | ENTAILMENT
+woman slice butter	 | tofu slice woman	 | NEUTRAL	 | ENTAILMENT
+woman slice tofu	 | woman slice butter	 | NEUTRAL	 | ENTAILMENT
+man fire shotgun	 | man fire gun	 | ENTAILMENT	 | NEUTRAL
+man fire shotgun	 | man shoot weapon	 | ENTAILMENT	 | NEUTRAL
+man shoot shotgun	 | man fire gun	 | ENTAILMENT	 | NEUTRAL
+man shoot shotgun	 | man fire shotgun	 | ENTAILMENT	 | CONTRADICTION
+cow eat grass	 | cow graze	 | ENTAILMENT	 | NEUTRAL
+hay eat cow	 | cow eat grass	 | ENTAILMENT	 | NEUTRAL
+cow eat hay	 | cow graze	 | ENTAILMENT	 | NEUTRAL
+cow eat grass	 | cow eat hay	 | ENTAILMENT	 | NEUTRAL
+person rid electric bicycle	 | man rid bicycle	 | NEUTRAL	 | ENTAILMENT
+person not fry	 | person fry food	 | CONTRADICTION	 | NEUTRAL
+man shoot bow	 | man shoot gun	 | CONTRADICTION	 | NEUTRAL
+woman dance near fire	 | woman dance near fireplace	 | NEUTRAL	 | ENTAILMENT
+two woman dance sing front crowd	 | person sing dance	 | ENTAILMENT	 | NEUTRAL
+skateboarder fall half pipe	 | skateboarder trick half pipe	 | NEUTRAL	 | ENTAILMENT
+skateboarder trick half pipe	 | boy skateboard half pipe	 | NEUTRAL	 | ENTAILMENT
+man woman drive road car	 | man woman drive road open-air vehicle	 | NEUTRAL	 | ENTAILMENT
+two men box	 | two men fight	 | ENTAILMENT	 | NEUTRAL
+someone pour ingredient pot	 | someone add ingredient pot	 | ENTAILMENT	 | NEUTRAL
+someone pour ingredient pot	 | man remove vegetable pot	 | NEUTRAL	 | ENTAILMENT
+man put vegetable pot	 | someone pour ingredient pot	 | ENTAILMENT	 | NEUTRAL
+black topless person pack pile rock front cloud background	 | topless person back pack front pile rock cloud background	 | NEUTRAL	 | ENTAILMENT
+boy blue face dirt shirt	 | boy blue shirt dirt face	 | NEUTRAL	 | ENTAILMENT
+man hat walk store	 | man hat walk past store	 | NEUTRAL	 | ENTAILMENT
+large white crane fly water	 | large white crane fly near water	 | NEUTRAL	 | ENTAILMENT
+dog golden fur water	 | dog golden fur water	 | CONTRADICTION	 | ENTAILMENT
+girl not carry sign no group people follow	 | young girl blue shirt walk sidewalk hold pink sign	 | CONTRADICTION	 | NEUTRAL
+girl carry sign group people follow	 | no young girl blue shirt walk sidewalk hold pink sign	 | CONTRADICTION	 | NEUTRAL
+small dog chase large brown cow	 | dog , small , chase large brown cow	 | ENTAILMENT	 | NEUTRAL
+small child wad water guide another person	 | no young child splash water	 | CONTRADICTION	 | NEUTRAL
+little dog drop bedroom slipper mouth	 | little dog grab bedroom slipper mouth	 | NEUTRAL	 | ENTAILMENT
+person blue jacket jump tall cement wall	 | person blue jacket jump onto tall cement wall	 | NEUTRAL	 | ENTAILMENT
+person cement jacket blue tall wall jumping	 | person blue jacket jump tall cement wall	 | NEUTRAL	 | ENTAILMENT
+woman jean sit saddle horse	 | no person wear jean sit top horse saddle	 | CONTRADICTION	 | NEUTRAL
+brown white dog hold baseball mouth	 | baseball hold mouth black white dog	 | ENTAILMENT	 | NEUTRAL
+young boy wear red swimsuit jump blue kiddy pool	 | young boy wear red swimsuit jump blue kiddy pool	 | CONTRADICTION	 | ENTAILMENT
+group race dog nose muzzle	 | group dog race muzzle nose	 | NEUTRAL	 | ENTAILMENT
+two people wad water	 | couple people wad water	 | ENTAILMENT	 | NEUTRAL
+two people stand ocean watch sunset	 | two people wad water	 | NEUTRAL	 | ENTAILMENT
+boy girl naked	 | boy girl swimsuit wear arm float	 | CONTRADICTION	 | NEUTRAL
+boy girl not play wear arm float	 | boy girl swimsuit wear arm float	 | NEUTRAL	 | CONTRADICTION
+woman yellow shirt surf pink surfboard	 | woman pink shirt surf yellow surfboard	 | NEUTRAL	 | ENTAILMENT
+man sit boat font sunset , near flag	 | man ship front sunset	 | ENTAILMENT	 | NEUTRAL
+no man boat front sunset	 | man sit boat font sunset , near flag	 | CONTRADICTION	 | NEUTRAL
+man sit boat font sunset , near flag	 | man boat front sunset	 | ENTAILMENT	 | NEUTRAL
+big dog small white dog play together	 | two dog play together grass	 | NEUTRAL	 | ENTAILMENT
+brown dog jump air	 | brown dog sit	 | NEUTRAL	 | ENTAILMENT
+policeman sit motorcycle	 | cop not sit police bike	 | CONTRADICTION	 | ENTAILMENT
+black dog run grass	 | black dog lie grass	 | NEUTRAL	 | ENTAILMENT
+tan dog run snow	 | yellow dog run white snow sunny day	 | NEUTRAL	 | ENTAILMENT
+little girl pink shirt run tree desert	 | no girl wearing jean pink shirt running	 | CONTRADICTION	 | NEUTRAL
+white dog wear christmas reindeer headband play dog brown coat grass	 | white dog wear reindeer ear near brown dog	 | ENTAILMENT	 | NEUTRAL
+no white dog wear christmas reindeer headband play brown dog grass	 | white dog wear reindeer ear near brown dog	 | NEUTRAL	 | CONTRADICTION
+white dog wear christmas reindeer headband play brown dog grass	 | white dog not wear reindeer ear n't near brown dog	 | CONTRADICTION	 | NEUTRAL
+no young boy rid dirt bike mud	 | young child rid bike rough dirt path	 | NEUTRAL	 | CONTRADICTION
+woman red dress put away instrument	 | woman red dress play instrument	 | CONTRADICTION	 | NEUTRAL
+woman red costume lean brick wall play instrument	 | instrument play woman red dress	 | NEUTRAL	 | ENTAILMENT
+surfer lean surfboard wall	 | surfer lean surfboard	 | NEUTRAL	 | ENTAILMENT
+sheepdog disperse herd sheep	 | sheepdog group herd sheep	 | NEUTRAL	 | CONTRADICTION
+yellow palm front building one dark skin male stand next	 | dark skin male stand one hand front yellow building	 | NEUTRAL	 | ENTAILMENT
+man play guitar guitar case open donation	 | man open guitar donation play case	 | NEUTRAL	 | ENTAILMENT
+nobody sit chair watch ocean	 | two adult sit chair watch ocean	 | CONTRADICTION	 | NEUTRAL
+small boy yellow shirt laugh beach	 | little boy wear yellow tank top laugh	 | NEUTRAL	 | ENTAILMENT
+little boy wear yellow tank top laugh	 | small boy yellow shirt laugh beach	 | NEUTRAL	 | ENTAILMENT
+two men rid orange raft beach	 | two men rid orange raft shore	 | NEUTRAL	 | ENTAILMENT
+dog really long hair red vest run grass	 | dog red vest run field	 | ENTAILMENT	 | NEUTRAL
+dog long hair red vest run grass	 | dog red vest run field	 | ENTAILMENT	 | NEUTRAL
+person stand dangerously white ice	 | person stand vast field glacial ice	 | NEUTRAL	 | ENTAILMENT
+one person stand vast field glacial ice	 | person stand white ice	 | NEUTRAL	 | ENTAILMENT
+person stand white ice	 | no person stand vast field glacial ice	 | NEUTRAL	 | CONTRADICTION
+person stand vast field glacial ice	 | person stand white ice	 | ENTAILMENT	 | NEUTRAL
+blond boy walk sand dune skateboard	 | blond boy slide sand dune skateboard	 | NEUTRAL	 | ENTAILMENT
+man put electronic device	 | man hold electronic device	 | CONTRADICTION	 | ENTAILMENT
+man take picture another guy	 | man hold electronic device	 | ENTAILMENT	 | NEUTRAL
+brown dog black dog grass	 | brown dog black dog grass	 | CONTRADICTION	 | ENTAILMENT
+group woman wear pink bunny ear point right	 | several woman wear pink bunny ear point right	 | ENTAILMENT	 | NEUTRAL
+woman wear bunny ear race number curiously point something distance	 | several woman wear pink bunny ear point right	 | ENTAILMENT	 | NEUTRAL
+ice hockey goalkeeper not wear yellow jersey not defend goal	 | hockey player yellow jersey guard goal	 | CONTRADICTION	 | NEUTRAL
+two people look gold statue	 | two people ignore nearby gold statue	 | CONTRADICTION	 | NEUTRAL
+bicyclist speed city street	 | bicyclist rid city street	 | ENTAILMENT	 | NEUTRAL
+woman wear blue helmet rid bicycle parking lot	 | bicyclist not rid city street	 | ENTAILMENT	 | NEUTRAL
+young girl stand one leg	 | young girl stand leg	 | CONTRADICTION	 | ENTAILMENT
+tan dog rest near brush	 | tan dog run brush	 | NEUTRAL	 | ENTAILMENT
+horse leap hurdle rider back	 | horse no rider fall hurdle	 | NEUTRAL	 | CONTRADICTION
+horse rider not leap barrier	 | horse leap hurdle rider back	 | CONTRADICTION	 | NEUTRAL
+horse leap hurdle rider back	 | horse rider leap barrier	 | ENTAILMENT	 | NEUTRAL
+football player red white uniform lift two teammate	 | football player red white uniform pull two teammate	 | CONTRADICTION	 | NEUTRAL
+woman white dress woman blue dress stand beside stage	 | woman white dress woman blue dress stand stage	 | NEUTRAL	 | ENTAILMENT
+white woman stand woman dress blue stage	 | woman white dress woman blue dress stand stage	 | NEUTRAL	 | ENTAILMENT
+two young woman folded arm look away screen	 | two young woman folded arm look screen	 | CONTRADICTION	 | ENTAILMENT
+dead bird near black man sit tree	 | black bird sit dead tree	 | NEUTRAL	 | ENTAILMENT
+black bird sit leafless tree	 | bird , black , sit dead tree	 | NEUTRAL	 | ENTAILMENT
+black bird sit dead tree	 | black bird sit comfortably leafless tree	 | NEUTRAL	 | ENTAILMENT
+black bird sit leafless tree	 | black bird sit dead tree	 | NEUTRAL	 | ENTAILMENT
+two people sit lawn chair read book	 | two people two chair read pleasantly	 | NEUTRAL	 | ENTAILMENT
+two child lean rusty ledge	 | two child peer rusty ledge	 | ENTAILMENT	 | NEUTRAL
+player purple , white black play near end field	 | black player make white player play near end purple field	 | NEUTRAL	 | ENTAILMENT
+man bicycle rid beach	 | person rid bicycle sand beside ocean	 | ENTAILMENT	 | NEUTRAL
+large duck fly rocky stream	 | large stream full rock , duck fly	 | NEUTRAL	 | ENTAILMENT
+duck , large , fly rocky stream	 | seabird fly rock	 | ENTAILMENT	 | NEUTRAL
+dog run downhill	 | dog run uphill	 | NEUTRAL	 | ENTAILMENT
+dog run hill full grass	 | dog run uphill	 | ENTAILMENT	 | NEUTRAL
+dog run grassy hill	 | dog run uphill	 | ENTAILMENT	 | NEUTRAL
+golden dog run field tall grass	 | brown dog run tall green grass	 | NEUTRAL	 | ENTAILMENT
+couple white dog run jump along beach	 | two dog play beach	 | ENTAILMENT	 | NEUTRAL
+two white dog run jump along beach	 | two dog play beach	 | ENTAILMENT	 | NEUTRAL
+large brown dog not run outside dirt	 | dog run alongside fence dirt track	 | NEUTRAL	 | CONTRADICTION
+man hold sign seek money	 | man seek sign hold money	 | NEUTRAL	 | ENTAILMENT
+snowboarder flip mound snow	 | somebody leap air board	 | ENTAILMENT	 | NEUTRAL
+blonde boy green sit swing	 | blonde boy green stand swing	 | CONTRADICTION	 | NEUTRAL
+man red uniform make jump dirt bike race	 | man red uniform race make jump bike dirt	 | NEUTRAL	 | ENTAILMENT
+man red uniform swiftly make jump dirt bike race	 | man participate bmx race	 | ENTAILMENT	 | NEUTRAL
+man not participate bmx race	 | man red uniform make jump dirt bike race	 | CONTRADICTION	 | NEUTRAL
+no family posing mantel christmas tree	 | happy family pose fireplace	 | CONTRADICTION	 | NEUTRAL
+people play rugby tackle	 | rugby player tackle	 | ENTAILMENT	 | NEUTRAL
+boy girl play outdoor gym	 | child play playground	 | ENTAILMENT	 | NEUTRAL
+rider blue black motocross bike not wear pant	 | motocross rider wear blue black pant	 | NEUTRAL	 | CONTRADICTION
+biker blue jacket , black pant white helmet drive dirt people watch	 | blue black pant wear motocross rider	 | ENTAILMENT	 | NEUTRAL
+man inline skate skate skate park	 | man inline skate rest skate park	 | NEUTRAL	 | ENTAILMENT
+oriental man two woman turn back camera	 | oriental man two woman face camera	 | CONTRADICTION	 | NEUTRAL
+oriental man two woman turn back camera	 | group people stand together look camera	 | NEUTRAL	 | ENTAILMENT
+small girl rid toy car	 | no child sit red yellow toy car	 | CONTRADICTION	 | NEUTRAL
+woman three men pose photo	 | woman three men deny photo	 | NEUTRAL	 | ENTAILMENT
+three men woman stand still picture	 | three men woman pose picture	 | ENTAILMENT	 | NEUTRAL
+three men woman stand still picture	 | woman three men pose photo	 | ENTAILMENT	 | NEUTRAL
+woman three men pose photo	 | three men woman run away picture	 | CONTRADICTION	 | NEUTRAL
+three men woman pose picture	 | woman pose three men photo	 | NEUTRAL	 | ENTAILMENT
+young boy cover grass jump near wooden fence	 | young boy cover grass jump near fence make wood	 | ENTAILMENT	 | NEUTRAL
+black dog walk tall grass	 | black dog not run grass	 | ENTAILMENT	 | NEUTRAL
+two little boy wear tuxedo	 | two little kid wear tuxedo	 | ENTAILMENT	 | NEUTRAL
+two boy , look small , dress tuxedo sit red carpeted floor	 | two little boy wear tuxedo	 | ENTAILMENT	 | NEUTRAL
+two small boy dress tuxedo sit red carpeted floor	 | two little kid wear tuxedo	 | ENTAILMENT	 | NEUTRAL
+two small boy dress tuxedo sit red carpeted floor	 | two little boy not wear tuxedo	 | CONTRADICTION	 | NEUTRAL
+two small boy dress tuxedo sit red carpeted floor	 | two little boy wear tuxedo	 | ENTAILMENT	 | NEUTRAL
+dog muzzle blue jacket run around yard	 | dog blue muzzle run around yard jacket	 | NEUTRAL	 | ENTAILMENT
+dog muzzle blue jacket run around yard	 | dog blue blanket run grass	 | ENTAILMENT	 | NEUTRAL
+person green shirt jump onto grass	 | person green shirt jump high grass	 | NEUTRAL	 | ENTAILMENT
+woman speak cell phone keep purse yellow bag near ledge	 | woman speak ledge keep cell phone inside purse inside yellow bag	 | NEUTRAL	 | ENTAILMENT
+man wheelie mountain bike	 | person bike rid one wheel	 | ENTAILMENT	 | NEUTRAL
+man wheelie mountain bike	 | no man bicycle rid one wheel	 | CONTRADICTION	 | NEUTRAL
+one man wheelie mountain bike	 | man bicycle rid one wheel	 | ENTAILMENT	 | NEUTRAL
+man wheelie mountain bike	 | man bicycle rid one wheel	 | ENTAILMENT	 | NEUTRAL
+duck brown feather green head flap wing water	 | bird flap wing water	 | ENTAILMENT	 | NEUTRAL
+furry brown dog run grassy area	 | brown dog play outdoors	 | ENTAILMENT	 | NEUTRAL
+woman fur hat fur coat sit outside building	 | woman fur hat fur coat stand outside building	 | CONTRADICTION	 | NEUTRAL
+elderly lady wait sidewalk	 | elderly person wait lady sidewalk	 | NEUTRAL	 | ENTAILMENT
+young child run gravel road cover dead leaf	 | young child lie gravel road cover dead leaf	 | NEUTRAL	 | CONTRADICTION
+young child run road make gravel cover dead leaf	 | young child run outside fall leaf	 | ENTAILMENT	 | NEUTRAL
+young child run gravel road cover dead leaf	 | young child run outside fall leaf	 | ENTAILMENT	 | NEUTRAL
+man wear long sleeved blue shirt jean rid unicycle street	 | man wear blue checker shirt cheerfully rid unicycle street	 | NEUTRAL	 | ENTAILMENT
+men distance star three big hill	 | three men star big green hill distance	 | NEUTRAL	 | ENTAILMENT
+three men look distance	 | three men look something nearby	 | NEUTRAL	 | ENTAILMENT
+one man climb rock wall another man hold rope	 | one climber hold rock another man rope wall	 | NEUTRAL	 | ENTAILMENT
+two child play statue	 | small kid climb statue park	 | ENTAILMENT	 | NEUTRAL
+small child climb statue park	 | child play statue	 | ENTAILMENT	 | NEUTRAL
+no child play statue	 | small child climb statue park	 | CONTRADICTION	 | NEUTRAL
+woman turn back view city	 | woman look view city	 | CONTRADICTION	 | NEUTRAL
+man stand top rock cloud behind	 | person lie top rock cloud behind	 | NEUTRAL	 | ENTAILMENT
+smile boy summer clothes stand still outside building	 | smile boy winter clothes wave mittened hand outside building snow	 | NEUTRAL	 | ENTAILMENT
+no young child dress cold weather stand outside	 | smile boy winter clothes wave mittened hand outside building snow	 | CONTRADICTION	 | NEUTRAL
+smile boy winter clothes wave mittened hand outside building snow	 | young child dress cold weather stand outside	 | ENTAILMENT	 | NEUTRAL
+dog chase ball grass	 | dog ball chase grass	 | NEUTRAL	 | ENTAILMENT
+bearded man sit train	 | hairy man sit train	 | NEUTRAL	 | ENTAILMENT
+small child show excitement swing set park	 | small child show boredom swing set park	 | NEUTRAL	 | ENTAILMENT
+little girl swing woman stand behind	 | girl stand behind little woman swing	 | CONTRADICTION	 | ENTAILMENT
+man two woman dark room sit table candle	 | man two woman darkened room sit table candle	 | ENTAILMENT	 | NEUTRAL
+man white shirt sunglass man black shirt sunglass sit table four beer bottle	 | no men sit table four beer bottle	 | CONTRADICTION	 | NEUTRAL
+two guy sit around table hold beer hand	 | no men sit table four beer bottle	 | CONTRADICTION	 | NEUTRAL
+two dog battle frisbee lake	 | two brown dog play frisbee water	 | ENTAILMENT	 | NEUTRAL
+girl wear shirt color white pink skirt , stand front house	 | girl wear white shirt pink skirt , stand front house	 | ENTAILMENT	 | NEUTRAL
+football player run official carry football	 | football player run past official carry football	 | NEUTRAL	 | ENTAILMENT
+person bike jump air sun flare beautifully bike frame	 | person fly air bicycle	 | ENTAILMENT	 | NEUTRAL
+bunch men play rugby muddy field	 | bunch men play rugby field full mud	 | ENTAILMENT	 | NEUTRAL
+snow two play dog	 | brown dog gray dog play snow	 | NEUTRAL	 | ENTAILMENT
+girl get tattoo remove hand	 | girl get tattoo hand	 | CONTRADICTION	 | ENTAILMENT
+woman purple top walk bicycle two stone column	 | stone woman bicycle top two purple column , people walk	 | NEUTRAL	 | ENTAILMENT
+man wear red jacket stand beside yellow canoe rock water background	 | man red jacket stand next yellow kayak rock ocean	 | ENTAILMENT	 | NEUTRAL
+black dog walk along tree trunk bridge water	 | dog cross river bridge make fall tree	 | NEUTRAL	 | ENTAILMENT
+little boy proudly wear green soccer strip run grass	 | child green white sport uniform run grass	 | ENTAILMENT	 | NEUTRAL
+boy blue run away woman blue	 | boy blue run towards woman blue	 | NEUTRAL	 | ENTAILMENT
+little boy brown hair jump brown chair onto floor	 | young boy quickly jump chair	 | ENTAILMENT	 | NEUTRAL
+young boy jump chair	 | no little boy brown hair jump brown chair onto floor	 | NEUTRAL	 | CONTRADICTION
+little boy brown hair jump brown chair onto floor	 | young boy jump chair	 | ENTAILMENT	 | NEUTRAL
+two kid sit colorful ball	 | two kid bounce colorful ball	 | NEUTRAL	 | ENTAILMENT
+blonde girl pink top happily smile wear funny glass large nose attach	 | little girl smile wear fake nose glass	 | NEUTRAL	 | ENTAILMENT
+boy umbrella let go father wear blue coat	 | boy umbrella hold father wear blue coat	 | NEUTRAL	 | CONTRADICTION
+great dog climb steep hill	 | great dog get steep hill	 | CONTRADICTION	 | NEUTRAL
+big surfer rid wave	 | surfer rid big wave	 | NEUTRAL	 | ENTAILMENT
+surfer rid big wave across dark green water	 | big surfer rid wave	 | NEUTRAL	 | ENTAILMENT
+big wave ride surfer across dark green water	 | surfer rid big wave	 | ENTAILMENT	 | NEUTRAL
+no surfer rid big wave across dark green water	 | surfer rid big wave	 | ENTAILMENT	 | NEUTRAL
+snowboarding man jump air	 | snowboarder jump air	 | ENTAILMENT	 | NEUTRAL
+man squat brush take photograph	 | man squat brush take photo	 | ENTAILMENT	 | NEUTRAL
+two dog look something move water	 | two dog look something splash water	 | ENTAILMENT	 | NEUTRAL
+black cat jump hay ball another hay ball	 | black dog jump n hay ball another hay ball	 | NEUTRAL	 | ENTAILMENT
+man motorcycle rid track waving	 | person motorcycle not hold arm	 | CONTRADICTION	 | NEUTRAL
+two white dog one brown dog not chase ball	 | two white dog play brown dog ball	 | NEUTRAL	 | CONTRADICTION
+two white dog one brown dog chase ball	 | two white dog play brown dog ball	 | NEUTRAL	 | ENTAILMENT
+dog jump shiny blue soccer ball field dry leaf	 | dog jump dry leaf field shiny blue soccer ball	 | NEUTRAL	 | ENTAILMENT
+dog run field chase ball	 | dog run towards toy	 | ENTAILMENT	 | NEUTRAL
+basketball player court floor ball grab another one	 | two basketball player scramble ball court	 | ENTAILMENT	 | NEUTRAL
+basketball player court floor another one grab ball	 | two basketball player scramble ball court	 | ENTAILMENT	 | NEUTRAL
+white dog n't look curiously black llama	 | white dog look curiously black llama	 | CONTRADICTION	 | ENTAILMENT
+black sheep stand near three white dog	 | black sheep stand three white dog	 | CONTRADICTION	 | ENTAILMENT
+grey dog jump toward black white dog snow	 | grey dog jump toward black white dog water	 | NEUTRAL	 | ENTAILMENT
+man dress black white hold tennis racket wait ball	 | man dress black white drop tennis racket wait ball	 | CONTRADICTION	 | NEUTRAL
+tennis player mid game hold racquet	 | player dress black white hold tennis racket wait ball	 | NEUTRAL	 | ENTAILMENT
+dog play green field	 | dog play green grass	 | ENTAILMENT	 | NEUTRAL
+brown white dog play lawn	 | dog play green grass	 | ENTAILMENT	 | NEUTRAL
+two men carry colorful basket blanket walk near building	 | two people walk laden basket blanket	 | ENTAILMENT	 | NEUTRAL
+two people carry colorful basket blanket walk near building	 | two people walk laden basket blanket	 | ENTAILMENT	 | NEUTRAL
+black white dog play tattered volleyball brown field	 | black white dog play new volleyball	 | NEUTRAL	 | ENTAILMENT
+black white dog play ruin volleyball brown field	 | black white dog play broken volleyball	 | ENTAILMENT	 | NEUTRAL
+topless woman smear brown substance blurry crowd background	 | topless woman smear brown substance nobody background	 | CONTRADICTION	 | ENTAILMENT
+female cheerleader sit knee male cheerleader	 | female cheerleader sit knee man	 | ENTAILMENT	 | NEUTRAL
+man purple hat climb rocky wall bare hand	 | man rock climb	 | ENTAILMENT	 | NEUTRAL
+two people drive jeep lady sit top	 | two people drive boat lady sit top	 | NEUTRAL	 | ENTAILMENT
+blond woman sit roof yellow vehicle two people inside	 | blond woman sit roof yellow vehicle two people outside	 | NEUTRAL	 | ENTAILMENT
+large brown dog jump red hurdle	 | brown white dog jump red , yellow white barrier	 | NEUTRAL	 | ENTAILMENT
+yellow dog drink water bottle	 | yellow dog drink water pot	 | CONTRADICTION	 | ENTAILMENT
+water faucet drink yellow dog	 | yellow dog drink water bottle	 | NEUTRAL	 | CONTRADICTION
+yellow dog drink water faucet	 | yellow dog drink water pot	 | NEUTRAL	 | CONTRADICTION
+bride white veil look	 | boy look wear wedding veil	 | NEUTRAL	 | ENTAILMENT
+bride white veil look	 | woman look wear wedding veil	 | NEUTRAL	 | ENTAILMENT
+three dog rest sidewalk	 | three dog rest pavement	 | ENTAILMENT	 | NEUTRAL
+three dog rest couch	 | three dog rest sidewalk	 | NEUTRAL	 | ENTAILMENT
+young man get motocross bike dirt hill	 | young man push motocross bike dirt hill	 | ENTAILMENT	 | NEUTRAL
+young man push motocross bike dirt hill	 | young man push motocross bike dirt hill	 | NEUTRAL	 | ENTAILMENT
+young dirt bikers get dirt bike sandy hill	 | young man get motocross bike dirt hill	 | NEUTRAL	 | ENTAILMENT
+old man woman rid bike boardwalk near ocean	 | old man woman rid bike boardwalk near water	 | ENTAILMENT	 | NEUTRAL
+old man woman rid bike boardwalk near water	 | middle age man woman rid bike road beside water	 | ENTAILMENT	 | NEUTRAL
+pedestrian car move traffic jam big city	 | people car crowded street	 | ENTAILMENT	 | NEUTRAL
+pedestrian car move traffic jam big city	 | people vehicle crowded street	 | ENTAILMENT	 | NEUTRAL
+two brown white dog fight grassy area front tree	 | two animal play outside	 | ENTAILMENT	 | NEUTRAL
+water drink soccer player sit field	 | man sit grass drinking water bottle	 | ENTAILMENT	 | NEUTRAL
+dog run wet sand	 | dog move wet sand	 | ENTAILMENT	 | NEUTRAL
+dog run wet sand	 | dog run dry sand	 | CONTRADICTION	 | NEUTRAL
+chubby face boy wear dark glass	 | boy wear sunglass	 | ENTAILMENT	 | NEUTRAL
+horse race	 | horse run	 | ENTAILMENT	 | NEUTRAL
+no bmx biker jump dirt ramp front body water	 | bikers get airborne track near water skyline	 | CONTRADICTION	 | NEUTRAL
+racer full gear wear helmet sponsor logo rid red sport motorcycle	 | racer full gear wear helmet sponsor logo rid blue sport motorcycle	 | NEUTRAL	 | ENTAILMENT
+boy jump side stone water fountain front building	 | boy jump side stone water fountain front building	 | CONTRADICTION	 | ENTAILMENT
+two large dog , light color one dark one , quickly move snowy terrain	 | two large dog , light color one dark one , run snowy terrain	 | ENTAILMENT	 | NEUTRAL
+two large dog , light color one dark one , sleep snowy terrain	 | two large dog , light color one dark one , run snowy terrain	 | NEUTRAL	 | ENTAILMENT
+young girl blue fun swing	 | young girl blue fun slide	 | NEUTRAL	 | ENTAILMENT
+young girl blue fun slide	 | girl blue slide slide	 | NEUTRAL	 | ENTAILMENT
+girl blue slide green slide	 | young girl blue fun slide	 | NEUTRAL	 | ENTAILMENT
+little girl smile run outside	 | little girl smile run inside	 | CONTRADICTION	 | NEUTRAL
+boy play slip slide grass	 | child play slip slide grass	 | ENTAILMENT	 | NEUTRAL
+two men stand together one look distance	 | two men stand together one look binoculars	 | NEUTRAL	 | ENTAILMENT
+two men look one hold binoculars	 | two men look one hold spyglass	 | NEUTRAL	 | ENTAILMENT
+two men stand together one look binoculars	 | two men look one hold binoculars	 | NEUTRAL	 | ENTAILMENT
+old man white shirt gold black hat sit crossed leg	 | young man white shirt gold black hat sit crossed leg	 | NEUTRAL	 | ENTAILMENT
+man bike jump pyramid-shaped ramp	 | bicyclist jump pyramid-shaped ramp	 | ENTAILMENT	 | NEUTRAL
+shirtless man play football lawn	 | shirtless man play football field	 | NEUTRAL	 | ENTAILMENT
+man go lake	 | man go water	 | ENTAILMENT	 | NEUTRAL
+five people stand grass three dog	 | five people run three dog green field beside road	 | CONTRADICTION	 | NEUTRAL
+five people stand three dog green field beside road	 | five people stand grass three dog	 | ENTAILMENT	 | NEUTRAL
+girl carry lot colorful scarf beach	 | young woman carry lot colorful scarf beach	 | NEUTRAL	 | ENTAILMENT
+light brown dog run grass	 | light brown dog run water	 | NEUTRAL	 | ENTAILMENT
+child splash water small blue pool	 | child splash water big red pool	 | CONTRADICTION	 | NEUTRAL
+toddler make splash outside blue paddling pool	 | toddler make splash inside blue paddling pool	 | CONTRADICTION	 | NEUTRAL
+toddler make splash inside blue paddling pool	 | child splash water pool	 | ENTAILMENT	 | NEUTRAL
+toddler make splash inside blue paddling pool	 | child splash water small blue pool	 | ENTAILMENT	 | NEUTRAL
+grey silky dog sleep grass brown dog look	 | grey silky dog lie grass brown dog look	 | ENTAILMENT	 | NEUTRAL
+brown dog spot black dog lie dry field	 | brown dog spot black dog lie dry grass	 | ENTAILMENT	 | NEUTRAL
+large dog small dog stand next kitchen counter sniff	 | large dog small dog stand next kitchen counter investigate	 | ENTAILMENT	 | NEUTRAL
+dirty tan dog roll water look right camera	 | dirty tan dog roll dirt look right camera	 | NEUTRAL	 | ENTAILMENT
+dirty tan dog roll dirt look right camera	 | dog play ground	 | ENTAILMENT	 | NEUTRAL
+dirty tan dog roll dirt look right camera	 | dog roll ground	 | ENTAILMENT	 | NEUTRAL
+arabic man n't wear white hat	 | arabic man wear white hat	 | CONTRADICTION	 | ENTAILMENT
+little kid play water fountain front people	 | child play fountain spray water ground	 | ENTAILMENT	 | NEUTRAL
+person yellow dirt bike take jump	 | person yellow clean bike take jump	 | NEUTRAL	 | ENTAILMENT
+person yellow dirt bike take jump	 | cyclist yellow bike airborne	 | ENTAILMENT	 | NEUTRAL
+little girl miss baseball tee	 | little girl hit baseball tee	 | CONTRADICTION	 | NEUTRAL
+girl hit little tee baseball	 | little girl hit baseball tee	 | NEUTRAL	 | ENTAILMENT
+people stand carnival	 | people stand parade	 | NEUTRAL	 | ENTAILMENT
+group people gather stand fair	 | people stand carnival	 | ENTAILMENT	 | NEUTRAL
+woman show dog short hair dog show	 | woman show dog long hair dog show	 | CONTRADICTION	 | NEUTRAL
+three child run hill	 | three child run hill	 | CONTRADICTION	 | ENTAILMENT
+three child run grassy hillside	 | three child run hill	 | ENTAILMENT	 | NEUTRAL
+black orange bird stand grass	 | black bird yellow beak stand green grass	 | NEUTRAL	 | ENTAILMENT
+man without shirt pose arm spread next woman	 | man without shirt pose arm spread near woman	 | ENTAILMENT	 | NEUTRAL
+two white dog run together	 | two white puppy play near water	 | NEUTRAL	 | ENTAILMENT
+group people look sound equipment	 | group people stand around sound mixing console	 | ENTAILMENT	 | NEUTRAL
+young couple sleep bed	 | young couple lie bed	 | ENTAILMENT	 | NEUTRAL
+young couple lie bed together	 | young couple lie couch together	 | NEUTRAL	 | ENTAILMENT
+young couple lie couch together	 | young couple lie bed	 | NEUTRAL	 | ENTAILMENT
+child wear yellow jacket jump rock	 | child wear yellow jacket jump rock	 | NEUTRAL	 | ENTAILMENT
+toddler rid plastic scooter toy	 | toddler play plastic scooter toy	 | ENTAILMENT	 | NEUTRAL
+young child rid three wheel scooter sidewalk	 | toddler rid plastic scooter toy	 | ENTAILMENT	 | NEUTRAL
+people cluster around bonfire night	 | people sit around bonfire night	 | ENTAILMENT	 | NEUTRAL
+several people sit around fire night	 | several people gather around fire night	 | ENTAILMENT	 | NEUTRAL
+people cluster around bonfire night	 | several people gather around fire night	 | ENTAILMENT	 | NEUTRAL
+several people sit around fire night	 | people cluster around bonfire night	 | ENTAILMENT	 | NEUTRAL
+dog leash walk water	 | dog leash walk near water	 | NEUTRAL	 | ENTAILMENT
+dog leash walk water	 | dog leash walk water	 | CONTRADICTION	 | ENTAILMENT
+dog leash walk water	 | dog leash walk water	 | NEUTRAL	 | ENTAILMENT
+dog leash walk water	 | black dog leash walk water	 | NEUTRAL	 | ENTAILMENT
+middle eastern man stand back lamp post near people	 | man lean pole surround	 | ENTAILMENT	 | NEUTRAL
+middle eastern man stand back lamp post near people	 | man lean pole surround people	 | ENTAILMENT	 | NEUTRAL
+couple look street guide	 | couple look map	 | ENTAILMENT	 | NEUTRAL
+couple not look map	 | man woman stand front art gallery look map	 | CONTRADICTION	 | NEUTRAL
+little dog run sand	 | dog run across gravel	 | NEUTRAL	 | ENTAILMENT
+two male stand cliff edge no one jump water	 | one boy orange short stand rock cliff water boy black short jump water	 | CONTRADICTION	 | NEUTRAL
+boy play game steel block	 | boy play game wooden block	 | NEUTRAL	 | ENTAILMENT
+dog head inside red green gift bag	 | red brown dog not dig nose inside holiday gift bag	 | NEUTRAL	 | CONTRADICTION
+girl bikini play dune	 | girl bikini play sand	 | ENTAILMENT	 | NEUTRAL
+wet kid wear sand walk little hat	 | little kid wear hat walk wet sand	 | NEUTRAL	 | ENTAILMENT
+boy wear white hat run beach	 | boy wear white hat walk beach	 | NEUTRAL	 | ENTAILMENT
+man black hat touch cardboard box	 | person black hat reach box	 | NEUTRAL	 | ENTAILMENT
+man black hat touch cardboard box	 | man black hat not reach box	 | NEUTRAL	 | CONTRADICTION
+two dog play beach	 | two dog play forest	 | NEUTRAL	 | ENTAILMENT
+two dog play sandy beach	 | two dog play rocky beach	 | NEUTRAL	 | ENTAILMENT
+large white dog jump snow	 | large white dog jump air snowy area	 | ENTAILMENT	 | NEUTRAL
+two young kid wear hat stick color tongue	 | two kid stick blue green color tongue	 | NEUTRAL	 | ENTAILMENT
+black brown dog eye fly	 | black brown dog eye insect	 | ENTAILMENT	 | NEUTRAL
+young white child not stand edge body water near bucket	 | young black child stand edge body water near bucket	 | NEUTRAL	 | CONTRADICTION
+two little boy play outside soccer ball green grass	 | child play outside soccer ball green grass	 | ENTAILMENT	 | NEUTRAL
+two little boy play outside soccer ball green grass	 | two child play ball park	 | ENTAILMENT	 | NEUTRAL
+snowboarder jump snowy hill	 | snowboarder jump snow	 | ENTAILMENT	 | NEUTRAL
+snowboarder jump snow	 | snowboarder not jump snow cover hill	 | CONTRADICTION	 | NEUTRAL
+person hike	 | person walk	 | ENTAILMENT	 | NEUTRAL
+distant person blue backpack hike area full rock	 | person hike	 | ENTAILMENT	 | NEUTRAL
+no person blue backpack hiking rocky area	 | person hike	 | NEUTRAL	 | CONTRADICTION
+no person hike	 | distant person blue backpack hike rocky area	 | CONTRADICTION	 | NEUTRAL
+woman wear paint costume piece rid bike empty street	 | woman wear paint costume piece rid bike busy street	 | NEUTRAL	 | ENTAILMENT
+woman wear paint costume piece rid bike empty street	 | girl strange outfit rid bike	 | ENTAILMENT	 | NEUTRAL
+black dog carry blue white ball mouth	 | black dog carry blue white toy mouth	 | ENTAILMENT	 | NEUTRAL
+girl uniform not play flute marching band	 | girl band play flute	 | NEUTRAL	 | CONTRADICTION
+two dog kennel hind leg face one another	 | two cat kennel hind leg face one another	 | ENTAILMENT	 | NEUTRAL
+black dog yellow dog play	 | two dog play	 | ENTAILMENT	 | NEUTRAL
+two girl dog walk forest path	 | two dog two people walk wood	 | ENTAILMENT	 | NEUTRAL
+man red shirt trick rollerblade	 | man red shirt trick skateboard	 | NEUTRAL	 | ENTAILMENT
+three friend make face camera	 | three enemy make face camera	 | CONTRADICTION	 | ENTAILMENT
+two men girl front wood panel wall pose funny face	 | two men girl front wood panel wall make funny face	 | ENTAILMENT	 | NEUTRAL
+four people walk along city sidewalk one green hat talk cell phone	 | group people walk street person hat phone	 | ENTAILMENT	 | NEUTRAL
+man black wetsuit rid foamy wave	 | surfer black wetsuit rid foamy wave	 | NEUTRAL	 | ENTAILMENT
+surfer surf small wave	 | surfer surf huge wave	 | NEUTRAL	 | ENTAILMENT
+player maneuver soccer ball	 | player maneuver basket ball	 | NEUTRAL	 | ENTAILMENT
+man green kick soccer ball man purple white rise	 | man green kick soccer ball man purple white fall	 | CONTRADICTION	 | NEUTRAL
+kid splash ocean	 | kid splash water	 | ENTAILMENT	 | NEUTRAL
+two dog run catch tennis ball	 | two dog run try catch soccer ball	 | NEUTRAL	 | CONTRADICTION
+dog area full sand , sand stir air several plant background	 | dog sandy area sand stir air several plant background	 | ENTAILMENT	 | NEUTRAL
+dog sand blow air	 | dog sand blow wind	 | ENTAILMENT	 | NEUTRAL
+dog sand blow wind	 | dog sandy area sand stir air several plant background	 | ENTAILMENT	 | NEUTRAL
+black white dog run field	 | black white dog run green yard	 | NEUTRAL	 | ENTAILMENT
+black white dog run indoors	 | black white dog run outdoors	 | CONTRADICTION	 | NEUTRAL
+woman wear blue shirt high heel stand sidewalk next man	 | man woman stand curb	 | ENTAILMENT	 | NEUTRAL
+woman sit wear swim gear	 | kid sit wear swim gear	 | NEUTRAL	 | ENTAILMENT
+black dog white dog wrestle floor	 | black dog white dog wrestle ground	 | ENTAILMENT	 | NEUTRAL
+black dog tan dog fight	 | two dog fight	 | ENTAILMENT	 | NEUTRAL
+black dog white dog wrestle ground	 | two dog fight	 | ENTAILMENT	 | NEUTRAL
+four dog play area cover grass	 | four dog play grassy area	 | ENTAILMENT	 | NEUTRAL
+dog nap park	 | dog rest park	 | ENTAILMENT	 | NEUTRAL
+brown puppy bite pole	 | brown puppy bite stick	 | NEUTRAL	 | ENTAILMENT
+woman play brown dog garden	 | woman play brown dog garden path	 | NEUTRAL	 | ENTAILMENT
+brown dog run snow	 | black dog run snow	 | NEUTRAL	 | ENTAILMENT
+girl paint coverall blue	 | girl blue coverall paint	 | NEUTRAL	 | ENTAILMENT
+golden retriever run	 | dog run	 | ENTAILMENT	 | NEUTRAL
+yellow dog run sandy path	 | yellow dog run sandy path	 | NEUTRAL	 | ENTAILMENT
+yellow dog run sandy path	 | dog run	 | ENTAILMENT	 | NEUTRAL
+two people seat near camel another camel foreground	 | two people seat camel another camel foreground	 | NEUTRAL	 | ENTAILMENT
+man stand body water near waterfall	 | body man water near waterfall	 | NEUTRAL	 | ENTAILMENT
+brown white dog run river	 | brown white dog run water	 | ENTAILMENT	 | NEUTRAL
+dog run sand chase ball	 | dog run grass chase ball	 | NEUTRAL	 | ENTAILMENT
+shirtless woman lead horse pull carriage	 | shirtless man lead horse pull carriage	 | CONTRADICTION	 | NEUTRAL
+shirtless man escort horse pull carriage along paved road	 | shirtless man escort horse pull carriage along dirty road	 | NEUTRAL	 | ENTAILMENT
+bicyclist perform trick clean wall	 | bicyclist perform trick heavily graphitized wall	 | NEUTRAL	 | ENTAILMENT
+black white dog large branch run field	 | black white dog large branch run grass	 | ENTAILMENT	 | NEUTRAL
+black white dog carry big stick green grass	 | black white dog carry huge stick green grass	 | ENTAILMENT	 | NEUTRAL
+black white dog large branch run grass	 | black white dog carry huge stick green grass	 | ENTAILMENT	 | NEUTRAL
+boy run beach	 | boy run sand	 | ENTAILMENT	 | NEUTRAL
+woman fire target practice	 | woman shoot target practice	 | ENTAILMENT	 | NEUTRAL
+woman wear ear protection fire gun outdoor shooting range	 | woman wear ear protection fire gun indoor shooting range	 | NEUTRAL	 | ENTAILMENT
+two young boy look camera one stick tongue	 | two kid look camera one stick tongue	 | ENTAILMENT	 | NEUTRAL
+large dog walk outside carry colorful toy mouth	 | large dog walk outside hold colorful toy mouth	 | ENTAILMENT	 | NEUTRAL
