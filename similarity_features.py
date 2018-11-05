@@ -360,6 +360,8 @@ class SimilarityFeatures:
                         continue
                     if similarity != None:
                         max_similarity = max(similarity, max_similarity)
+        if max_similarity == 1e+300:
+            return 12.0
         return max_similarity
         
     def get_res_min(self, sentence1, sentence2):
@@ -389,6 +391,8 @@ class SimilarityFeatures:
                         continue
                     if similarity != None:
                         min_similarity = min(similarity, min_similarity)
+        if min_similarity == maxint:
+            return 0
         return min_similarity
         
 
@@ -418,6 +422,8 @@ class SimilarityFeatures:
                         similarity = wordnet.res_similarity(synsets_word1[0], synsets_word2[0], self.brown_ic)
                     except:
                         continue
+                    if similarity == 1e+300:
+                        similarity = 12.0
                     if similarity != None:
                         avg_similarity += similarity
                         total_count += 1
