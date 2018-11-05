@@ -31,6 +31,7 @@ def sentence_pair_features(sentence1, sentence2):
       'similarity_jcn_max': similarity_features.get_jcn_max(sentence1,sentence2),
       'similarity_jcn_min': similarity_features.get_jcn_min(sentence1,sentence2),
       'similarity_jcn_avg': similarity_features.get_jcn_average(sentence1,sentence2),
+      'antonyms': negation_features.antonyms(sentence1, sentence2),
     }
     
 
