@@ -38,7 +38,7 @@ class Lemamatizer:
             if self.remove_stop_words and token.lemma_ in self.stop_words:
                 continue
             lematized_sentence_with_metadata.append((token.lemma_, self.replace_spacy_tag(token.pos_)))
-        return MetaSentence(lematized_sentence_with_metadata)
+        return MetaSentence(lematized_sentence_with_metadata, sentence)
 
     # Simplify WordNet tags
     def replace_tag(self, tag):

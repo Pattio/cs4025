@@ -22,35 +22,36 @@ spicy_features = SpicyFeatures()
 
 def sentence_pair_features(sentence1, sentence2):
     return {
-      'negation': negation_features.simple_negation(sentence1, sentence2),
-      'similarity_path_max': similarity_features.get_path_max(sentence1, sentence2),
-      'similarity_path_min': similarity_features.get_path_min(sentence1, sentence2),
-      'similarity_path_avg': similarity_features.get_path_average(sentence1,sentence2),
-      # 'similarity_lch_max': similarity_features.get_lch_max(sentence1,sentence2),
-      # 'similarity_lch_min': similarity_features.get_lch_min(sentence1,sentence2),
-      # 'similarity_lch_avg': similarity_features.get_lch_average(sentence1,sentence2),
-      'similarity_wup_max': similarity_features.get_wup_max(sentence1,sentence2),
-      'similarity_wup_min': similarity_features.get_wup_min(sentence1,sentence2),
-      'similarity_wup_avg': similarity_features.get_wup_average(sentence1,sentence2),
-      'similarity_jcn_max': similarity_features.get_jcn_max(sentence1,sentence2),
-      'similarity_jcn_min': similarity_features.get_jcn_min(sentence1,sentence2),
-      'similarity_jcn_avg': similarity_features.get_jcn_average(sentence1,sentence2),
-      'antonyms': negation_features.antonyms(sentence1, sentence2),
-      'similarity_res_max': similarity_features.get_res_max(sentence1,sentence2),
-      'similarity_res_min': similarity_features.get_res_min(sentence1,sentence2),
-      'similarity_res_avg': similarity_features.get_res_average(sentence1,sentence2),
-      'text_similarity_jaccard': text_similarity_features.jaccard(sentence1,sentence2),
-      'text_similarity_dice': text_similarity_features.dice(sentence1,sentence2),
-      'text_similarity_overlap1': text_similarity_features.overlap1(sentence1,sentence2),
-    #   'text_similarity_overlap2': text_similarity_features.overlap2(sentence1,sentence2),
-      'text_similarity_manhattan': text_similarity_features.manhattan(sentence1,sentence2),
+    #   'negation': negation_features.simple_negation(sentence1, sentence2),
+    #   'similarity_path_max': similarity_features.get_path_max(sentence1, sentence2),
+    #   'similarity_path_min': similarity_features.get_path_min(sentence1, sentence2),
+    #   'similarity_path_avg': similarity_features.get_path_average(sentence1,sentence2),
+    #   # 'similarity_lch_max': similarity_features.get_lch_max(sentence1,sentence2),
+    #   # 'similarity_lch_min': similarity_features.get_lch_min(sentence1,sentence2),
+    #   # 'similarity_lch_avg': similarity_features.get_lch_average(sentence1,sentence2),
+    #   'similarity_wup_max': similarity_features.get_wup_max(sentence1,sentence2),
+    #   'similarity_wup_min': similarity_features.get_wup_min(sentence1,sentence2),
+    #   'similarity_wup_avg': similarity_features.get_wup_average(sentence1,sentence2),
+    #   'similarity_jcn_max': similarity_features.get_jcn_max(sentence1,sentence2),
+    #   'similarity_jcn_min': similarity_features.get_jcn_min(sentence1,sentence2),
+    #   'similarity_jcn_avg': similarity_features.get_jcn_average(sentence1,sentence2),
+    #   'antonyms': negation_features.antonyms(sentence1, sentence2),
+    #   'similarity_res_max': similarity_features.get_res_max(sentence1,sentence2),
+    #   'similarity_res_min': similarity_features.get_res_min(sentence1,sentence2),
+    #   'similarity_res_avg': similarity_features.get_res_average(sentence1,sentence2),
+    #   'text_similarity_jaccard': text_similarity_features.jaccard(sentence1,sentence2),
+    #   'text_similarity_dice': text_similarity_features.dice(sentence1,sentence2),
+    #   'text_similarity_overlap1': text_similarity_features.overlap1(sentence1,sentence2),
+    # #   'text_similarity_overlap2': text_similarity_features.overlap2(sentence1,sentence2),
+    #   'text_similarity_manhattan': text_similarity_features.manhattan(sentence1,sentence2),
     #   'text_similarity_euclidean': text_similarity_features.euclidean(sentence1,sentence2),
-    #   'text_similarity_cosine': text_similarity_features.cosine(sentence1,sentence2),
-    #   'text_similarity_stat_pearsonr': text_similarity_features.stat_pearsonr(sentence1,sentence2),
+    # #   'text_similarity_cosine': text_similarity_features.cosine(sentence1,sentence2),
+    # #   'text_similarity_stat_pearsonr': text_similarity_features.stat_pearsonr(sentence1,sentence2),
     #   'text_similarity_stat_kendalltau': text_similarity_features.stat_kendalltau(sentence1,sentence2),
-      'spicy_synonyms': spicy_features.synonyms(sentence1,sentence2),
-    #   'text-similarity-sentence_originality': text_similarity_features.sentence_originality(sentence1, sentence2)
-        
+    #   'spicy_synonyms': spicy_features.synonyms(sentence1,sentence2),
+    # #   'text-similarity-sentence_originality': text_similarity_features.sentence_originality(sentence1, sentence2)
+      
+        'x': text_similarity_features.stat_kendalltau(sentence1,sentence2)  
 
       
       
@@ -75,7 +76,7 @@ train_set = [(sentence_pair_features(sentence1,sentence2), entailment_type) for 
 # print(train_set)
 
 # classifier = nltk.NaiveBayesClassifier.train(train_set)
-classifier = SklearnClassifier(SVC(C = 100)).train(train_set)
+# classifier = SklearnClassifier(SVC()).train(train_set)
 # classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 30)).train(train_set)
 # classifier = nltk.classify.DecisionTreeClassifier.train(train_set)
 
@@ -94,7 +95,7 @@ with open("SICK_test_annotated.txt") as data:
 test_set = [(sentence_pair_features(sentence1,sentence2), entailment_type) for (sentence1, sentence2, entailment_type) in labeled_test_sentence_pairs]
 # # print(test_set)
 
-print(nltk.classify.accuracy(classifier, test_set))
+# print(nltk.classify.accuracy(classifier, test_set))
 
 
 
