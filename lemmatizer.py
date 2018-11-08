@@ -32,7 +32,7 @@ class Lemamatizer:
     
     def spacy_lemmatize(self, sentence):
         lematized_sentence_with_metadata = []
-        word_data = self.nlp(unicode(sentence, encoding="utf-8"))
+        word_data = self.nlp(sentence)
         for token in word_data:
             # Remove stop words
             if self.remove_stop_words and token.lemma_ in self.stop_words:
@@ -63,5 +63,3 @@ class Lemamatizer:
             return available_tags[tag]
         except:
             return 'n' 
-    
-    

@@ -1,6 +1,6 @@
 from nltk.corpus import wordnet
 from nltk.corpus import wordnet_ic
-from sys import maxint
+from sys import maxsize as maxint
 
 class SimilarityFeatures:
     brown_ic = wordnet_ic.ic('ic-brown.dat')

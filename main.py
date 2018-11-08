@@ -1,6 +1,14 @@
 import nltk
-import itertools
+# import itertools
 import math
+
+from nltk.classify import SklearnClassifier
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import SGDClassifier
+
 # from nltk import pos_tag
 # from nltk.stem import WordNetLemmatizer
 # from nltk.tokenize import sent_tokenize, word_tokenize
@@ -9,10 +17,9 @@ from lemmatizer import Lemamatizer
 from similarity_features import SimilarityFeatures
 from negation_features import NegationFeatures
 from text_similarity_features import TextSimilarityFeatures
-from nltk.classify import SklearnClassifier
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
 from spicy_features import SpicyFeatures
+
+
 
 lemmatizer = Lemamatizer()
 similarity_features = SimilarityFeatures()
@@ -61,7 +68,7 @@ def sentence_pair_features(sentence1, sentence2):
 
 labeled_sentence_pairs = []
 
-with open("SICK_train.txt") as data:
+with open("data/SICK_train.txt") as data:
     next(data) 
     for line in data:
         fields = line.rstrip('[\n\r]+').split("\t")
@@ -75,14 +82,20 @@ train_set = [(sentence_pair_features(sentence1,sentence2), entailment_type) for 
 # print(train_set)
 
 # classifier = nltk.NaiveBayesClassifier.train(train_set)
-classifier = SklearnClassifier(SVC(C = 100)).train(train_set)
-# classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 30)).train(train_set)
 # classifier = nltk.classify.DecisionTreeClassifier.train(train_set)
+# classifier = SklearnClassifier(SVC(C = 100)).train(train_set)
+# classifier = SklearnClassifier(GradientBoostingClassifier(n_estimators = 140)).train(train_set)
+classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 30)).train(train_set)
+# classifier = SklearnClassifier(KNeighborsClassifier(n_neighbors = 17)).train(train_set)
+# classifier = SklearnClassifier(SGDClassifier(max_iter = 15)).train(train_set)
+
+
+
 
 
 labeled_test_sentence_pairs = []
 
-with open("SICK_test_annotated.txt") as data:
+with open("data/SICK_test_annotated.txt") as data:
     next(data) 
     for line in data:
         fields = line.rstrip('[\n\r]+').split("\t")
@@ -121,13 +134,3 @@ print(nltk.classify.accuracy(classifier, test_set))
 # outputFile = open('missclassified.txt', 'w')
 # outputFile.write('\n'.join(output))
 # outputFile.close()
-
-        
-
-
-
-
-
-
-
-
