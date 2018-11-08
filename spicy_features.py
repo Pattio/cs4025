@@ -105,3 +105,18 @@ class SpicyFeatures:
         if total_count == 0:
             return 0
         return float(avg_similarity) / float(total_count)
+
+    def get_spacy_sentence(self, sentence1, sentence2):
+        normal_sentence1 = sentence1.strip_metadata()
+        normal_sentence2 = sentence2.strip_metadata()
+        sentence1_set = set(normal_sentence1)
+        sentence2_set = set(normal_sentence2)
+
+        sentence1_unique = sentence1_set.difference(sentence2_set)
+        sentence2_unique = sentence2_set.difference(sentence1_set)
+        seperator = ' '
+        # seperator.join(sentence1_unique)
+        spacy_sentence1 = self.nlp(seperator.join(sentence1_unique))
+        spacy_sentence2 = self.nlp(seperator.join(sentence2_unique))
+        return spacy_sentence1.similarity(spacy_sentence2)
+

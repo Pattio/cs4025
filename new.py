@@ -33,7 +33,7 @@ with open("data/test.txt") as data:
         fields = line.rstrip('[\n\r]+').split("\t")
         meta_sentence_1 = lemmatizer.lemmatize(fields[1])
         meta_sentence_2 = lemmatizer.lemmatize(fields[2])
-        print(spicy_features.get_spacy_average(meta_sentence_1, meta_sentence_2))
+        print(spicy_features.get_spacy_sentence(meta_sentence_1, meta_sentence_2))
 # '''
 '''
 count = 0
