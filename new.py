@@ -7,7 +7,7 @@ from text_similarity_features import TextSimilarityFeatures
 
 lemmatizer = Lemamatizer()
 text_similarity_features = TextSimilarityFeatures()
-#similarity_features = SimilarityFeatures()
+similarity_features = SimilarityFeatures()
 #negation_features = NegationFeatures()
 #spicy_features = SpicyFeatures()
 #############################
@@ -16,15 +16,17 @@ text_similarity_features = TextSimilarityFeatures()
 
 
 # print(lemmatizer.spacy_lemmatize("A group of kids is playing in a yard and an old man is standing in the background").data)
-'''
+
+
+# '''
 with open("data/test.txt") as data:
     next(data) 
     for line in data:
         fields = line.rstrip('[\n\r]+').split("\t")
         meta_sentence_1 = lemmatizer.lemmatize(fields[1])
         meta_sentence_2 = lemmatizer.lemmatize(fields[2])
-        print(spicy_features.synonyms(meta_sentence_1, meta_sentence_2))
-'''
+        print(similarity_features.get_lin_average(meta_sentence_1, meta_sentence_2))
+# '''
 '''
 count = 0
 with open("data/test.txt") as data:
