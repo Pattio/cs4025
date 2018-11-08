@@ -60,9 +60,9 @@ def sentence_pair_features(sentence1, sentence2):
       # 'similarity_res_max': similarity_features.get_res_max(sentence1,sentence2),
       # 'similarity_res_min': similarity_features.get_res_min(sentence1,sentence2),
       # 'similarity_res_avg': similarity_features.get_res_average(sentence1,sentence2),
-      'spicy_spacy_max': similarity_features.get_spacy_max(sentence1,sentence2),
-      'spicy_spacy_min': similarity_features.get_spacy_min(sentence1,sentence2),
-      'spicy_spacy_avg': similarity_features.get_spacy_average(sentence1,sentence2),
+      'spicy_spacy_max': spicy_features.get_spacy_max(sentence1,sentence2),
+      'spicy_spacy_min': spicy_features.get_spacy_min(sentence1,sentence2),
+      'spicy_spacy_avg': spicy_features.get_spacy_average(sentence1,sentence2),
 
       
       
