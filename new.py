@@ -1,4 +1,5 @@
 import nltk
+import spacy
 from lemmatizer import Lemamatizer
 from similarity_features import SimilarityFeatures
 from negation_features import NegationFeatures
@@ -9,10 +10,17 @@ lemmatizer = Lemamatizer()
 text_similarity_features = TextSimilarityFeatures()
 similarity_features = SimilarityFeatures()
 #negation_features = NegationFeatures()
-#spicy_features = SpicyFeatures()
+spicy_features = SpicyFeatures()
 #############################
 # Read the data
 #############################
+
+nlp = spacy.load('en')
+tokens = nlp(u'dog cat banana no')
+
+# for token1 in tokens:
+#     for token2 in tokens:
+#         print(token1.text, token2.text, token1.similarity(token2))
 
 
 # print(lemmatizer.spacy_lemmatize("A group of kids is playing in a yard and an old man is standing in the background").data)
@@ -25,7 +33,7 @@ with open("data/test.txt") as data:
         fields = line.rstrip('[\n\r]+').split("\t")
         meta_sentence_1 = lemmatizer.lemmatize(fields[1])
         meta_sentence_2 = lemmatizer.lemmatize(fields[2])
-        print(similarity_features.get_lin_average(meta_sentence_1, meta_sentence_2))
+        print(spicy_features.get_spacy_average(meta_sentence_1, meta_sentence_2))
 # '''
 '''
 count = 0

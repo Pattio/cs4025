@@ -57,7 +57,12 @@ def sentence_pair_features(sentence1, sentence2):
     #   'text_similarity_stat_kendalltau': text_similarity_features.stat_kendalltau(sentence1,sentence2),
       'spicy_synonyms': spicy_features.synonyms(sentence1,sentence2),
     #   'text-similarity-sentence_originality': text_similarity_features.sentence_originality(sentence1, sentence2)
-        
+      # 'similarity_res_max': similarity_features.get_res_max(sentence1,sentence2),
+      # 'similarity_res_min': similarity_features.get_res_min(sentence1,sentence2),
+      # 'similarity_res_avg': similarity_features.get_res_average(sentence1,sentence2),
+      'spicy_spacy_max': similarity_features.get_spacy_max(sentence1,sentence2),
+      'spicy_spacy_min': similarity_features.get_spacy_min(sentence1,sentence2),
+      'spicy_spacy_avg': similarity_features.get_spacy_average(sentence1,sentence2),
 
       
       
