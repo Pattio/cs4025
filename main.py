@@ -1,142 +1,43 @@
 import nltk
-# import itertools
-import math
-
-from nltk.classify import SklearnClassifier
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import SGDClassifier
-
-# from nltk import pos_tag
-# from nltk.stem import WordNetLemmatizer
-# from nltk.tokenize import sent_tokenize, word_tokenize
-# from nltk.corpus import wordnet
 from lemmatizer import Lemamatizer
-from similarity_features import SimilarityFeatures
-from negation_features import NegationFeatures
-from text_similarity_features import TextSimilarityFeatures
-from spicy_features import SpicyFeatures
+from classification import Classification
+from multiprocessing import Pool
 
-
-
+classification = Classification()
 lemmatizer = Lemamatizer()
-similarity_features = SimilarityFeatures()
-text_similarity_features = TextSimilarityFeatures()
-negation_features = NegationFeatures()
-spicy_features = SpicyFeatures()
+classifier = classification.create_classifier()
+pool_size = 4
 
-def sentence_pair_features(sentence1, sentence2):
-    return {
-      'negation': negation_features.simple_negation(sentence1, sentence2),
-      'similarity_path_max': similarity_features.get_path_max(sentence1, sentence2),
-      'similarity_path_min': similarity_features.get_path_min(sentence1, sentence2),
-      'similarity_path_avg': similarity_features.get_path_average(sentence1,sentence2),
-      # 'similarity_lch_max': similarity_features.get_lch_max(sentence1,sentence2),
-      # 'similarity_lch_min': similarity_features.get_lch_min(sentence1,sentence2),
-      # 'similarity_lch_avg': similarity_features.get_lch_average(sentence1,sentence2),
-      # 'similarity_wup_max': similarity_features.get_wup_max(sentence1,sentence2),
-      # 'similarity_wup_min': similarity_features.get_wup_min(sentence1,sentence2),
-      # 'similarity_wup_avg': similarity_features.get_wup_average(sentence1,sentence2),
-      # 'similarity_jcn_max': similarity_features.get_jcn_max(sentence1,sentence2),
-      # 'similarity_jcn_min': similarity_features.get_jcn_min(sentence1,sentence2),
-      # 'similarity_jcn_avg': similarity_features.get_jcn_average(sentence1,sentence2),
-      'antonyms': negation_features.antonyms(sentence1, sentence2),
-      # 'similarity_res_max': similarity_features.get_res_max(sentence1,sentence2),
-      # 'similarity_res_min': similarity_features.get_res_min(sentence1,sentence2),
-      # 'similarity_res_avg': similarity_features.get_res_average(sentence1,sentence2),
-      'text_similarity_jaccard': text_similarity_features.jaccard(sentence1,sentence2),
-      'text_similarity_dice': text_similarity_features.dice(sentence1,sentence2),
-      'text_similarity_overlap1': text_similarity_features.overlap1(sentence1,sentence2),
-    #   'text_similarity_overlap2': text_similarity_features.overlap2(sentence1,sentence2),
-      'text_similarity_manhattan': text_similarity_features.manhattan(sentence1,sentence2),
-    #   'text_similarity_euclidean': text_similarity_features.euclidean(sentence1,sentence2),
-    #   'text_similarity_cosine': text_similarity_features.cosine(sentence1,sentence2),
-    #   'text_similarity_stat_pearsonr': text_similarity_features.stat_pearsonr(sentence1,sentence2),
-    #   'text_similarity_stat_kendalltau': text_similarity_features.stat_kendalltau(sentence1,sentence2),
-      # 'spicy_synonyms': spicy_features.synonyms(sentence1,sentence2),
-    #   'text-similarity-sentence_originality': text_similarity_features.sentence_originality(sentence1, sentence2)
-      # 'similarity_res_max': similarity_features.get_res_max(sentence1,sentence2),
-      # 'similarity_res_min': similarity_features.get_res_min(sentence1,sentence2),
-      # 'similarity_res_avg': similarity_features.get_res_average(sentence1,sentence2),
-      'spicy_spacy_max': spicy_features.get_spacy_max(sentence1,sentence2),
-      'spicy_spacy_min': spicy_features.get_spacy_min(sentence1,sentence2),
-      'spicy_spacy_avg': spicy_features.get_spacy_average(sentence1,sentence2),
-      'spicy_spacy_sentence': spicy_features.get_spacy_sentence(sentence1,sentence2),
+def proccess_line(line):
+    fields = line.rstrip('[\n\r]+').split("\t")
+    meta_sentence_1 = lemmatizer.spacy_lemmatize(fields[1])
+    meta_sentence_2 = lemmatizer.spacy_lemmatize(fields[2])
+    entailment_type = fields[4]
+    return (meta_sentence_1, meta_sentence_2, entailment_type)
 
-      
-      
-      
-      
-    }
-    
+def create_labeled_sentence(line):
+  (sentence1, sentence2, entailment_type) = line
+  return (classification.create_features(sentence1, sentence2), entailment_type)
 
-labeled_sentence_pairs = []
+def create_labeled_data(filepath):
+    lines = []
+    proccessed_lines = []
+    labeled_data = []
+    with open(filepath) as data:
+        next(data) 
+        for line in data:
+            lines.append(line)
+    with Pool(pool_size) as p:
+        proccessed_lines = p.map(proccess_line, lines)
+    with Pool(pool_size) as p:
+        labeled_data = p.map(create_labeled_sentence, proccessed_lines) 
+    return labeled_data
 
-with open("data/SICK_train.txt") as data:
-    next(data) 
-    for line in data:
-        fields = line.rstrip('[\n\r]+').split("\t")
-        meta_sentence_1 = lemmatizer.spacy_lemmatize(fields[1])
-        meta_sentence_2 = lemmatizer.spacy_lemmatize(fields[2])
-        entailment_type = fields[4]
-        labeled_sentence_pairs.append((meta_sentence_1,meta_sentence_2,entailment_type))
-
-            
-train_set = [(sentence_pair_features(sentence1,sentence2), entailment_type) for (sentence1, sentence2, entailment_type) in labeled_sentence_pairs]
-# print(train_set)
-
-# classifier = nltk.NaiveBayesClassifier.train(train_set)
-# classifier = nltk.classify.DecisionTreeClassifier.train(train_set)
-# classifier = SklearnClassifier(SVC(C = 100)).train(train_set)
-# classifier = SklearnClassifier(GradientBoostingClassifier(n_estimators = 140)).train(train_set)
-classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 30)).train(train_set)
-# classifier = SklearnClassifier(KNeighborsClassifier(n_neighbors = 17)).train(train_set)
-# classifier = SklearnClassifier(SGDClassifier(max_iter = 15)).train(train_set)
-
-
-
-
-
-labeled_test_sentence_pairs = []
-
-with open("data/SICK_test_annotated.txt") as data:
-    next(data) 
-    for line in data:
-        fields = line.rstrip('[\n\r]+').split("\t")
-        meta_sentence_1 = lemmatizer.spacy_lemmatize(fields[1])
-        meta_sentence_2 = lemmatizer.spacy_lemmatize(fields[2])
-        entailment_type = fields[4]
-        labeled_test_sentence_pairs.append((meta_sentence_1,meta_sentence_2,entailment_type))
-
-test_set = [(sentence_pair_features(sentence1,sentence2), entailment_type) for (sentence1, sentence2, entailment_type) in labeled_test_sentence_pairs]
-# # print(test_set)
-
-print(nltk.classify.accuracy(classifier, test_set))
-
-
-
-
-
-
-# print(classifier.show_most_informative_features(5))
-
-# output = []
-# for test_case in labeled_test_sentence_pairs:
-#     # print('testcase ', test_case)
-#     s1 = test_case[0]
-#     s2 = test_case[1]
-#     entailment_type = test_case[2] 
-
-#     result = classifier.classify(sentence_pair_features(s1,s2))
-#     # print(' '.join(s1.strip_metadata()))
-#     # print(' '.join(s2.strip_metadata()))
-#     # print('result ', result)
-
-#     if result != entailment_type:
-#         output.append('\t | '.join([' '.join(s1.strip_metadata()),' '.join(s2.strip_metadata()), entailment_type, result]))
-
-# outputFile = open('missclassified.txt', 'w')
-# outputFile.write('\n'.join(output))
-# outputFile.close()
+print("======== LABELING TRAINING DATA ========")
+train_data = create_labeled_data("data/SICK_train.txt")
+print("======== LABELING TEST DATA ========")
+test_data = create_labeled_data("data/SICK_test_annotated.txt")
+print("======== TRAINING CLASSIFIER ========")
+classifier.train(train_data)
+print("======== TESTING CLASSIFIER ========")
+print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
