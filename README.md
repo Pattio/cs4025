@@ -21,6 +21,10 @@ python3 -m spacy download en
 ```
 
 ```bash
+python3 -m spacy download en_core_web_lg
+```
+
+```bash
 python3 -m nltk.downloader all
 ```
 
