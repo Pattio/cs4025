@@ -1,4 +1,6 @@
 import nltk
+import pickle
+from sys import argv
 from lemmatizer import Lemamatizer
 from classification import Classification
 from multiprocessing import Pool
@@ -32,13 +34,72 @@ def create_labeled_data(filepath):
     with Pool(pool_size) as p:
         labeled_data = p.map(create_labeled_sentence, proccessed_lines) 
     return labeled_data
+
+def confusion_matrix(test_data, classifier):
+    correct_entailment_type = []
+    predicted_entailment_type = []
+
+    for test_case in test_data:
+        correct_entailment_type.append(test_case[1]) # ??
+        result = classifier.classify(test_case[0])
+        predicted_entailment_type.append(result)
+
+    cm = nltk.ConfusionMatrix(correct_entailment_type, predicted_entailment_type)
+    return cm.pretty_format(sort_by_count=True, show_percents=True, truncate=9)
     
 if __name__ == '__main__':
-    print("======== LABELING TRAINING DATA ========")
-    train_data = create_labeled_data("data/SICK_train.txt")
-    print("======== LABELING TEST DATA ========")
-    test_data = create_labeled_data("data/SICK_test_annotated.txt")
-    print("======== TRAINING CLASSIFIER ========")
-    classifier.train(train_data)
-    print("======== TESTING CLASSIFIER ========")
-    print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
+    if len(argv) == 2:
+        if argv[1] == '--save':
+            print("======== LABELING TRAINING DATA ========")
+            train_data = create_labeled_data("data/SICK_train.txt")
+            print("======== TRAINING CLASSIFIER ========")
+            classifier.train(train_data)
+            f = open('saved_classifier.pickle', 'wb')
+            pickle.dump(classifier, f)
+            f.close()
+            print("Your classifier is now trained and saved into the following file: 'saved_classifier.pickle' ")
+        
+        elif argv[1] == "--load":
+            try:
+                print("======== LOADING SAVED CLASSIFIER ========")
+                f = open('saved_classifier.pickle', 'rb')
+                classifier = pickle.load(f)
+                f.close()
+                print("======== LABELING TEST DATA ========")
+                test_data = create_labeled_data("data/SICK_test_annotated.txt")
+                print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
+            except:
+                print("\n'saved_classifier.pickle' is not found")
+                print("Run: 'python3 main.py' instead ")
+                exit()
+
+        elif argv[1] == "--cm":
+            try:
+                print("======== LOADING SAVED CLASSIFIER ========")
+                f = open('saved_classifier.pickle', 'rb')
+                classifier = pickle.load(f)
+                f.close()
+                print("======== LABELING TEST DATA ========")
+                test_data = create_labeled_data("data/SICK_test_annotated.txt")
+                print(confusion_matrix(test_data, classifier))
+            except:
+                print("\n'saved_classifier.pickle' is not found")
+                print("Run: 'python3 main.py' instead ")
+                exit()
+
+        else:
+            print('Invalid command line argument entered')
+
+    elif len(argv) > 2:
+        print('\nToo many command line arguments!')
+        print('Please enter zero or one argument according to README.md')
+
+    else:
+        print("======== LABELING TRAINING DATA ========")
+        train_data = create_labeled_data("data/SICK_train.txt")
+        print("======== LABELING TEST DATA ========")
+        test_data = create_labeled_data("data/SICK_test_annotated.txt")
+        print("======== TRAINING CLASSIFIER ========")
+        classifier.train(train_data)
+        print("======== TESTING CLASSIFIER ========")
+        print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
