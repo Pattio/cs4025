@@ -11,7 +11,7 @@ class Lemamatizer:
     wnl = WordNetLemmatizer()
     allowed_stop_words = ["not", "no", "nor"]
     stop_words = []
-    nlp = spacy.load('en')
+    nlp = spacy.load('en_core_web_lg')
 
     def __init__(self):
         all_stop_words = [word for word in set(stopwords.words('english')) if word not in self.allowed_stop_words]

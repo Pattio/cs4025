@@ -3,7 +3,7 @@ from nltk.corpus import wordnet
 from sys import maxsize as maxint
 
 class SpicyFeatures:
-    nlp = spacy.load('en')
+    nlp = spacy.load('en_core_web_lg')
 
     def synonyms(self, sentence1, sentence2):
         normal_sentence1 = sentence1.strip_metadata()

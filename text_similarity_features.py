@@ -3,6 +3,14 @@ from scipy.stats import pearsonr
 from scipy.stats import spearmanr
 from scipy.stats import kendalltau
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
+from sklearn.metrics.pairwise import manhattan_distances
+from sklearn.metrics.pairwise import cosine_distances
+from sklearn.metrics.pairwise import euclidean_distances
+from sklearn.metrics.pairwise import laplacian_kernel
+from sklearn.metrics.pairwise import pairwise_distances_chunked
+
 class TextSimilarityFeatures:
     
     def jaccard(self, sentence1, sentence2):
@@ -51,7 +59,42 @@ class TextSimilarityFeatures:
     #         vector1.append(tf1 * idf)
     #         vector2.append(tf2 * idf)
     #     return vector1, vector2
+    vectorizer = TfidfVectorizer()
 
+    def tfdif_advanced(self, sentence1, sentence2):
+        lemmatized_sentence1 = sentence1.strip_metadata()
+        lemmatized_sentence2 = sentence2.strip_metadata()
+        separator = " "
+        sentences = [
+            separator.join(lemmatized_sentence1),
+            separator.join(lemmatized_sentence2),
+        ]
+        return self.vectorizer.fit_transform(sentences)
+    
+    def cosine_advanced(self, sentence1, sentence2):
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        cosine_similarities = linear_kernel(tfidf[0:1], tfidf).flatten()
+        return cosine_similarities[0]
+
+    def manhattan_advanced(self, sentence1, sentence2):
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        return manhattan_distances(tfidf)[0][1]
+
+    def cosine_distance_advanced(self, sentence1, sentence2):
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        return cosine_distances(tfidf)[0][1]
+
+    def euclidean_advanced(self, sentence1, sentence2):
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        return euclidean_distances(tfidf)[0][1]
+
+    def laplacian_kernel_advanced(self, sentence1, sentence2):
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        return laplacian_kernel(tfidf)[0][1]
+
+    def pairwise_distances_chunked_advanced(self, sentence1, sentence2):
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        return pairwise_distances_chunked(tfidf)[0][1]
     
     def tfidf(self, lemmatized_sentence1, lemmatized_sentence2):
         lemmatized_sentence1 = lemmatized_sentence1.strip_metadata()
