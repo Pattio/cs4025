@@ -24,7 +24,7 @@ class Classification:
         # classifier = nltk.classify.DecisionTreeClassifier
         # classifier = SklearnClassifier(SVC(C = 100))
         # classifier = SklearnClassifier(GradientBoostingClassifier(n_estimators = 140))
-        classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 100))
+        classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 3000))
         # classifier = SklearnClassifier(KNeighborsClassifier(n_neighbors = 17))
         # classifier = SklearnClassifier(SGDClassifier(max_iter = 15))
         return classifier

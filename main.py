@@ -16,8 +16,8 @@ def proccess_line(line):
     return (meta_sentence_1, meta_sentence_2, entailment_type)
 
 def create_labeled_sentence(line):
-  (sentence1, sentence2, entailment_type) = line
-  return (classification.create_features(sentence1, sentence2), entailment_type)
+    (sentence1, sentence2, entailment_type) = line
+    return (classification.create_features(sentence1, sentence2), entailment_type)
 
 def create_labeled_data(filepath):
     lines = []
@@ -32,12 +32,13 @@ def create_labeled_data(filepath):
     with Pool(pool_size) as p:
         labeled_data = p.map(create_labeled_sentence, proccessed_lines) 
     return labeled_data
-
-print("======== LABELING TRAINING DATA ========")
-train_data = create_labeled_data("data/SICK_train.txt")
-print("======== LABELING TEST DATA ========")
-test_data = create_labeled_data("data/SICK_test_annotated.txt")
-print("======== TRAINING CLASSIFIER ========")
-classifier.train(train_data)
-print("======== TESTING CLASSIFIER ========")
-print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
+    
+if __name__ == '__main__':
+    print("======== LABELING TRAINING DATA ========")
+    train_data = create_labeled_data("data/SICK_train.txt")
+    print("======== LABELING TEST DATA ========")
+    test_data = create_labeled_data("data/SICK_test_annotated.txt")
+    print("======== TRAINING CLASSIFIER ========")
+    classifier.train(train_data)
+    print("======== TESTING CLASSIFIER ========")
+    print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))

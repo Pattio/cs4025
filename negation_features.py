@@ -2,6 +2,7 @@ from nltk.corpus import wordnet
 
 class NegationFeatures:
     negation_list = ["no", "not", "nor"]
+    # negation_list = ["no", "not", "nor", "none", "nobody", "nothing", "neither", "nowhere", "never"]
     
     def simple_negation(self, sentence1, sentence2):
         normal_sentence1 = sentence1.strip_metadata()
