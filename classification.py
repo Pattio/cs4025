@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import SGDClassifier
+from sklearn.neural_network import MLPClassifier
 
 from similarity_features import SimilarityFeatures
 from negation_features import NegationFeatures
@@ -24,9 +25,10 @@ class Classification:
         # classifier = nltk.classify.DecisionTreeClassifier
         # classifier = SklearnClassifier(SVC(C = 100))
         # classifier = SklearnClassifier(GradientBoostingClassifier(n_estimators = 140))
-        classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 3000))
+        # classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 100))
         # classifier = SklearnClassifier(KNeighborsClassifier(n_neighbors = 17))
         # classifier = SklearnClassifier(SGDClassifier(max_iter = 15))
+        classifier = SklearnClassifier(MLPClassifier(solver='lbfgs',alpha=1e-5,hidden_layer_sizes=(20, 18), random_state=1))
         return classifier
 
     def create_features(self, sentence1, sentence2):

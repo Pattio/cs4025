@@ -51,4 +51,14 @@ To load the saved classifier and print the confusion matrix of the test set, run
 python3 main.py --cm
 ```
 
+To save the preprocessed data sets to enable fast classifier training (python3 main.py --fast), run:
 
+```bash
+python3 main.py --preprocess
+```
+
+To use saved preprocessed data sets and train new classifier then print its accuracy, run:
+
+```bash
+python3 main.py --fast
+```
