@@ -5,10 +5,14 @@ from lemmatizer import Lemamatizer
 from classification import Classification
 from multiprocessing import Pool
 
-classification = Classification()
+classification = Classification("rf",
+    {
+        'n_estimators': 3000,
+    }
+)
 lemmatizer = Lemamatizer()
-classifier = classification.create_classifier()
 pool_size = 4
+
 
 def proccess_line(line):
     fields = line.rstrip('[\n\r]+').split("\t")
@@ -17,48 +21,53 @@ def proccess_line(line):
     entailment_type = fields[4]
     return (meta_sentence_1, meta_sentence_2, entailment_type)
 
+
 def create_labeled_sentence(line):
     (sentence1, sentence2, entailment_type) = line
     return (classification.create_features(sentence1, sentence2), entailment_type)
+
 
 def create_labeled_data(filepath):
     lines = []
     proccessed_lines = []
     labeled_data = []
     with open(filepath) as data:
-        next(data) 
+        next(data)
         for line in data:
             lines.append(line)
     with Pool(pool_size) as p:
         proccessed_lines = p.map(proccess_line, lines)
     with Pool(pool_size) as p:
-        labeled_data = p.map(create_labeled_sentence, proccessed_lines) 
+        labeled_data = p.map(create_labeled_sentence, proccessed_lines)
     return labeled_data
+
 
 def confusion_matrix(test_data, classifier):
     correct_entailment_type = []
     predicted_entailment_type = []
 
     for test_case in test_data:
-        correct_entailment_type.append(test_case[1]) # ??
+        correct_entailment_type.append(test_case[1])
         result = classifier.classify(test_case[0])
         predicted_entailment_type.append(result)
 
     cm = nltk.ConfusionMatrix(correct_entailment_type, predicted_entailment_type)
     return cm.pretty_format(sort_by_count=True, show_percents=True, truncate=9)
-    
+
+
 if __name__ == '__main__':
+
     if len(argv) == 2:
         if argv[1] == '--save':
             print("======== LABELING TRAINING DATA ========")
             train_data = create_labeled_data("data/SICK_train.txt")
             print("======== TRAINING CLASSIFIER ========")
-            classifier.train(train_data)
+            classification.classifier.train(train_data)
             f = open('saved_classifier.pickle', 'wb')
-            pickle.dump(classifier, f)
+            pickle.dump(classification.classifier, f)
             f.close()
             print("Your classifier is now trained and saved into the following file: 'saved_classifier.pickle' ")
-        
+
         elif argv[1] == "--load":
             try:
                 print("======== LOADING SAVED CLASSIFIER ========")
@@ -84,14 +93,14 @@ if __name__ == '__main__':
                 test_data = pickle.load(f)
                 f.close()
                 print("======== TRAINING CLASSIFIER ========")
-                classifier.train(train_data)
+                classification.classifier.train(train_data)
                 print("======== PRINTING CONFUSION MATRIX ========")
-                print(confusion_matrix(test_data, classifier))
+                print(confusion_matrix(test_data, classification.classifier))
             except:
                 print("Saved preprocessed data sets are not found")
                 print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
                 exit()
-        
+
         elif argv[1] == "--preprocess":
             print("======== LABELING TRAINING DATA ========")
             train_data = create_labeled_data("data/SICK_train.txt")
@@ -117,9 +126,25 @@ if __name__ == '__main__':
                 test_data = pickle.load(f)
                 f.close()
                 print("======== TRAINING CLASSIFIER ========")
-                classifier.train(train_data)
+                classification.classifier.train(train_data)
                 print("======== TESTING CLASSIFIER ========")
-                print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
+                print("Accuracy: " + str(nltk.classify.accuracy(classification.classifier, test_data) * 100.0))
+            except:
+                print("Saved preprocessed data sets are not found")
+                print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
+                exit()
+        elif argv[1] == '--hp':
+            try:
+                print("======== LOADING PREPROCESSED TRAIN DATA ========")
+                f = open('preprocessed-train-data.pickle', 'rb')
+                train_data = pickle.load(f)
+                f.close()
+                print("======== LOOKING FOR HYPERPARAMETERS ========")
+                classification.find_hyperparameters(train_data, {
+                    'max_features': ['log2', 'sqrt', 'auto'],
+                    'n_estimators': [10, 30],
+                    'criterion': ['entropy', 'gini'],
+                })
             except:
                 print("Saved preprocessed data sets are not found")
                 print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
@@ -138,6 +163,6 @@ if __name__ == '__main__':
         print("======== LABELING TEST DATA ========")
         test_data = create_labeled_data("data/SICK_test_annotated.txt")
         print("======== TRAINING CLASSIFIER ========")
-        classifier.train(train_data)
+        classification.classifier.train(train_data)
         print("======== TESTING CLASSIFIER ========")
-        print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
+        print("Accuracy: " + str(nltk.classify.accuracy(classification.classifier, test_data) * 100.0))
