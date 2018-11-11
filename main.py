@@ -75,16 +75,54 @@ if __name__ == '__main__':
 
         elif argv[1] == "--cm":
             try:
-                print("======== LOADING SAVED CLASSIFIER ========")
-                f = open('saved_classifier.pickle', 'rb')
-                classifier = pickle.load(f)
+                print("======== LOADING PREPROCESSED TRAIN DATA ========")
+                f = open('preprocessed-train-data.pickle', 'rb')
+                train_data = pickle.load(f)
                 f.close()
-                print("======== LABELING TEST DATA ========")
-                test_data = create_labeled_data("data/SICK_test_annotated.txt")
+                print("======== LOADING PREPROCESSED TEST DATA ========")
+                f = open('preprocessed-test-data.pickle', 'rb')
+                test_data = pickle.load(f)
+                f.close()
+                print("======== TRAINING CLASSIFIER ========")
+                classifier.train(train_data)
+                print("======== PRINTING CONFUSION MATRIX ========")
                 print(confusion_matrix(test_data, classifier))
             except:
-                print("\n'saved_classifier.pickle' is not found")
-                print("Run: 'python3 main.py' instead ")
+                print("Saved preprocessed data sets are not found")
+                print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
+                exit()
+        
+        elif argv[1] == "--preprocess":
+            print("======== LABELING TRAINING DATA ========")
+            train_data = create_labeled_data("data/SICK_train.txt")
+            f = open('preprocessed-train-data.pickle', 'wb')
+            pickle.dump(train_data, f)
+            f.close()
+            print("Preprocessed training data is saved into 'preprocessed-train-data.pickle'")
+            print("======== LABELING TEST DATA ========")
+            test_data = create_labeled_data("data/SICK_test_annotated.txt")
+            f = open('preprocessed-test-data.pickle', 'wb')
+            pickle.dump(test_data, f)
+            f.close()
+            print("Preprocessed test data is saved into 'preprocessed-test-data.pickle'")
+
+        elif argv[1] == '--fast':
+            try:
+                print("======== LOADING PREPROCESSED TRAIN DATA ========")
+                f = open('preprocessed-train-data.pickle', 'rb')
+                train_data = pickle.load(f)
+                f.close()
+                print("======== LOADING PREPROCESSED TEST DATA ========")
+                f = open('preprocessed-test-data.pickle', 'rb')
+                test_data = pickle.load(f)
+                f.close()
+                print("======== TRAINING CLASSIFIER ========")
+                classifier.train(train_data)
+                print("======== TESTING CLASSIFIER ========")
+                print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
+            except:
+                print("Saved preprocessed data sets are not found")
+                print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
                 exit()
 
         else:

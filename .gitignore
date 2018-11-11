@@ -5,3 +5,5 @@
 __pycache__
 cs4025code-env
 saved_classifier.pickle
+preprocessed-test-data.pickle
+preprocessed-train-data.pickle
