@@ -24,7 +24,7 @@ class Classification:
         # classifier = nltk.classify.DecisionTreeClassifier
         # classifier = SklearnClassifier(SVC(C = 100))
         # classifier = SklearnClassifier(GradientBoostingClassifier(n_estimators = 140))
-        classifier = SklearnClassifier(RandomForestClassifier(n_estimators = 3000))
+        classifier = SklearnClassifier(RandomForestClassifier(n_estimators=3000)) #24
         # classifier = SklearnClassifier(KNeighborsClassifier(n_neighbors = 17))
         # classifier = SklearnClassifier(SGDClassifier(max_iter = 15))
         return classifier
@@ -53,10 +53,14 @@ class Classification:
           'text_similarity_overlap1': self.text_similarity_features.overlap1(sentence1,sentence2),
           # 'text_similarity_overlap2': self.text_similarity_features.overlap2(sentence1,sentence2),
           'text_similarity_manhattan': self.text_similarity_features.manhattan(sentence1,sentence2),
-          'text_similarity_cosine_distance': self.text_similarity_features.cosine_distance_advanced(sentence1,sentence2),
+          # 'text_similarity_cosine_distance': self.text_similarity_features.cosine_distance_advanced(sentence1,sentence2),
+          # 'text_similarity_euclidean_advanced': self.text_similarity_features.euclidean_advanced(sentence1,sentence2),
+          # 'text_similarity_laplacian_advanced': self.text_similarity_features.laplacian_kernel_advanced(sentence1,sentence2),
+          # 'text_similarity_chunked_advanced': self.text_similarity_features.pairwise_distances_chunked_advanced(sentence1,sentence2),
           
           # 'text_similarity_euclidean': self.text_similarity_features.euclidean(sentence1,sentence2),
           'text_similarity_cosine': self.text_similarity_features.cosine_advanced(sentence1,sentence2),
+          # 'text_similarity_cosine_spicy': self.text_similarity_features.cosine_advanced_spicy(sentence1,sentence2),
           # 'text_similarity_stat_pearsonr': self.text_similarity_features.stat_pearsonr(sentence1,sentence2),
           # 'text_similarity_stat_kendalltau': self.text_similarity_features.stat_kendalltau(sentence1,sentence2),
           'spicy_synonyms': self.spicy_features.synonyms(sentence1,sentence2),

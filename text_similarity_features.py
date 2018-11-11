@@ -45,20 +45,6 @@ class TextSimilarityFeatures:
         return len(A.intersection(B))/len(B)
         
     
-    # def tfidf(self, sentence1, sentence2):
-    #     normal_sentence1 = sentence1.strip_metadata()
-    #     normal_sentence2 = sentence2.strip_metadata()
-    #     vector1 = []
-    #     vector2 = []
-    #     word_set = set(normal_sentence1 + normal_sentence2)
-    #     for word in word_set:
-    #         tf1 = normal_sentence1.count(word)/len(normal_sentence1)
-    #         tf2 = normal_sentence2.count(word)/len(normal_sentence2)
-    #         number_docs = [word in normal_sentence1, word in normal_sentence2].count(True)
-    #         idf = (math.log10(2/number_docs))
-    #         vector1.append(tf1 * idf)
-    #         vector2.append(tf2 * idf)
-    #     return vector1, vector2
     vectorizer = TfidfVectorizer()
 
     def tfdif_advanced(self, sentence1, sentence2):
@@ -73,6 +59,15 @@ class TextSimilarityFeatures:
     
     def cosine_advanced(self, sentence1, sentence2):
         tfidf = self.tfdif_advanced(sentence1, sentence2)
+        cosine_similarities = linear_kernel(tfidf[0:1], tfidf).flatten()
+        return cosine_similarities[0]
+
+    def cosine_advanced_spicy(self, sentence1, sentence2):
+        sentences = [
+            sentence1.original_sentence,
+            sentence2.original_sentence,
+        ]
+        tfidf = self.vectorizer.fit_transform(sentences)
         cosine_similarities = linear_kernel(tfidf[0:1], tfidf).flatten()
         return cosine_similarities[0]
 
@@ -94,7 +89,7 @@ class TextSimilarityFeatures:
 
     def pairwise_distances_chunked_advanced(self, sentence1, sentence2):
         tfidf = self.tfdif_advanced(sentence1, sentence2)
-        return pairwise_distances_chunked(tfidf)[0][1]
+        return next(pairwise_distances_chunked(tfidf))[0][1]
     
     def tfidf(self, lemmatized_sentence1, lemmatized_sentence2):
         lemmatized_sentence1 = lemmatized_sentence1.strip_metadata()
