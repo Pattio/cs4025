@@ -1,8 +1,8 @@
 import nltk
 import pickle
 from sys import argv
-from lemmatizer import Lemamatizer
 from classification import Classification
+from lemmatizer import Lemamatizer
 from multiprocessing import Pool
 
 classification = Classification("rf",
@@ -129,22 +129,6 @@ if __name__ == '__main__':
                 classification.classifier.train(train_data)
                 print("======== TESTING CLASSIFIER ========")
                 print("Accuracy: " + str(nltk.classify.accuracy(classification.classifier, test_data) * 100.0))
-            except:
-                print("Saved preprocessed data sets are not found")
-                print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
-                exit()
-        elif argv[1] == '--hp':
-            try:
-                print("======== LOADING PREPROCESSED TRAIN DATA ========")
-                f = open('preprocessed-train-data.pickle', 'rb')
-                train_data = pickle.load(f)
-                f.close()
-                print("======== LOOKING FOR HYPERPARAMETERS ========")
-                classification.find_hyperparameters(train_data, {
-                    'max_features': ['log2', 'sqrt', 'auto'],
-                    'n_estimators': [10, 30],
-                    'criterion': ['entropy', 'gini'],
-                })
             except:
                 print("Saved preprocessed data sets are not found")
                 print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
