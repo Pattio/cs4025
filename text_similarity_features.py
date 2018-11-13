@@ -131,29 +131,42 @@ class TextSimilarityFeatures:
         return math.sqrt(count)
 
     def stat_pearsonr(self, sentence1, sentence2):
-        x, y = self.tfidf(sentence1, sentence2)
-        if x == y:
-            return 1
-        return pearsonr(x, y)[0]
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        x = tfidf.toarray()[0]
+        y = tfidf.toarray()[1]
+        result = pearsonr(x, y)[0]
+        if math.isnan(result):
+            return 0
+
+        if numpy.isfinite(result) == False:
+            return 0
+        return result
 
     def stat_spearmanr(self, sentence1, sentence2):
-        x, y = self.tfidf(sentence1, sentence2)
-        if x == y:
-            return 1
-        return spearmanr(x, y)[0]
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        x = tfidf.toarray()[0]
+        y = tfidf.toarray()[1]
+        result = spearmanr(x, y)[0]
+        if math.isnan(result):
+            return 0
+
+        if numpy.isfinite(result) == False:
+            return 0
+
+        return result
 
     def stat_kendalltau(self, sentence1, sentence2):
-        x, y = self.tfidf(sentence1, sentence2)
+        tfidf = self.tfdif_advanced(sentence1, sentence2)
+        x = tfidf.toarray()[0]
+        y = tfidf.toarray()[1]
         result = kendalltau(x, y)[0]
-        if x == y:
-            result = 1
         if math.isnan(result):
-            print('vector1: ', x, 'vector2: ', y)
-            print('pair: ', sentence1.strip_metadata(), sentence2.strip_metadata())
-            print('result: ', result)
-        # print(result)
+            return 0
+
+        if numpy.isfinite(result) == False:
+            return 0
+
         return result
-        
         
     def sentence_originality(self, sentence1, sentence2):
         normal_sentence1 = sentence1.original_sentence.split(" ")

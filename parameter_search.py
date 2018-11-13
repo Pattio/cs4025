@@ -46,9 +46,9 @@ class ParameterSearch:
                 print("----------------------")
                 best_score = score
                 best_grid = g
-            print("--------------------------")
-            print("Best Score: %0.6f" % best_score)
-            print("Grid:", best_grid)
+        print("--------------------------")
+        print("Best Score: %0.6f" % best_score)
+        print("Grid:", best_grid)
 
     def search_parameters_cv(self, classifier, parameter_space):
         train_data = self.load_data("preprocessed-train-data.pickle")
@@ -69,11 +69,12 @@ class ParameterSearch:
 
 
 pm = ParameterSearch()
-pm.search_parameters(RandomForestClassifier(), {
+pm.search_parameters(RandomForestClassifier(n_jobs=-1), {
     'n_estimators': [30],
     'criterion': ['gini', 'entropy'],
-    'max_depth': [5, 15, 24, 60, None],
-    'min_samples_split': [2, 5, 10, 24],
-    'min_samples_leaf': [1, 3, 5],
-    'max_features': ['auto', 'sqrt', 'log2'],
+    'max_depth': [25, 50, 75, 100, None],
+    'min_samples_split': [2, 5, 10, 25],
+    'min_samples_leaf': [1, 10, 25],
+    'max_features': ['auto', 'sqrt', 'log2', None],
+    'class_weight': ['balanced', 'balanced_subsample', None]
 })

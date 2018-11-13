@@ -7,7 +7,7 @@ from multiprocessing import Pool
 
 classification = Classification("rf",
     {
-        'n_estimators': 3000,
+        'n_estimators': 5000,
     }
 )
 lemmatizer = Lemamatizer()
@@ -92,10 +92,14 @@ if __name__ == '__main__':
                 f = open('preprocessed-test-data.pickle', 'rb')
                 test_data = pickle.load(f)
                 f.close()
-                print("======== TRAINING CLASSIFIER ========")
-                classification.classifier.train(train_data)
+                print("======== LOADING CLASSIFIER ========")
+                f = open('saved_classifier.pickle', 'rb')
+                classifier = pickle.load(f)
+                f.close()
+                # print("======== TRAINING CLASSIFIER ========")
+                # classification.classifier.train(train_data)
                 print("======== PRINTING CONFUSION MATRIX ========")
-                print(confusion_matrix(test_data, classification.classifier))
+                print(confusion_matrix(test_data, classifier))
             except:
                 print("Saved preprocessed data sets are not found")
                 print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
@@ -125,10 +129,14 @@ if __name__ == '__main__':
                 f = open('preprocessed-test-data.pickle', 'rb')
                 test_data = pickle.load(f)
                 f.close()
-                print("======== TRAINING CLASSIFIER ========")
-                classification.classifier.train(train_data)
+                print("======== LOADING CLASSIFIER ========")
+                f = open('saved_classifier.pickle', 'rb')
+                classifier = pickle.load(f)
+                f.close()
+                # print("======== TRAINING CLASSIFIER ========")
+                # classifier.train(train_data)
                 print("======== TESTING CLASSIFIER ========")
-                print("Accuracy: " + str(nltk.classify.accuracy(classification.classifier, test_data) * 100.0))
+                print("Accuracy: " + str(nltk.classify.accuracy(classifier, test_data) * 100.0))
             except:
                 print("Saved preprocessed data sets are not found")
                 print("Run 'python3 main.py --preprocess' to save the preprocessed data sets!")
